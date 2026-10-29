@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Materiales fuente y datos privados de la empresa
+/Docs/
+
+# Captura de la landing con contenido de muestra no validado
+/screen.png

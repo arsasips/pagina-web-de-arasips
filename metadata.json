@@ -1,0 +1,6 @@
+{
+  "name": "ARSAS IPS - Rehabilitación y Educación Especial",
+  "description": "Centro integral de rehabilitación y educación especial en Valledupar y Atánquez, Cesar. Citas médicas, especialistas y atención con EPS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
