@@ -34,3 +34,8 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Se usó el repositorio existente `arsasips/pagina-web-de-arasips` indicado por el propietario; es público y estaba vacío.
 - Configurada identidad Git solo en este repositorio local con los datos facilitados.
 - Creado commit inicial local en `main`; el remoto está configurado. La subida quedó esperando el inicio de sesión del usuario en Git Credential Manager.
+
+## [2026-10-29] publicación | GitHub
+- El usuario completó la autenticación en Git Credential Manager.
+- Subido el commit `039572805697edf6bec1ce0cec120865758e7f2b` a `arsasips/pagina-web-de-arasips`, rama `main`.
+- Verificado en GitHub: el último commit aparece en el repositorio y están visibles `src/` y `wiki/`; no se subieron `Docs/`, `screen.png`, `node_modules/` ni `dist/`.

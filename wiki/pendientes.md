@@ -17,5 +17,4 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Resuelto para el repositorio (2026-10-29):** retirados de los datos iniciales los registros de cita con información identificable y los testimonios no verificados. También se retiraron las identificaciones de muestra del portal y se añadió una migración local que filtra únicamente las dos claves de citas demo (`rec-001`, `rec-002`) y cuatro IDs de testimonios demo (`test-1` a `test-4`).
 - **Pendiente antes de usar funciones con datos reales:** las citas y testimonios se guardan en `localStorage` sin backend ni autenticación institucional. Mantener estas funciones solo para demostración hasta que exista un destino seguro y autorizado.
 - **Confirmado:** dependencias instaladas y `package-lock.json` creado. `npm run lint` y `npm run build` pasaron.
-- **Pendiente:** completar la autenticación de Git Credential Manager con GitHub para permitir el `push` del commit a `arsasips/pagina-web-de-arasips`.
-- **Confirmado:** el repositorio GitHub indicado por el propietario es público y estaba vacío al inspeccionarlo; solo después de autenticar se subirá el commit.
+- **Confirmado:** el commit inicial ya está en el repositorio público `arsasips/pagina-web-de-arasips`, rama `main`.
