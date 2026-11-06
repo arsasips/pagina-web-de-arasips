@@ -46,3 +46,8 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Identificadas las skills SEO y tratamiento de datos empaquetadas localmente; las skills de diseño/móvil nombradas no están instaladas. No se instaló nada ni se modificó la landing.
 - Contrastado el checklist con el código y el catálogo de `Docs/`; se anotaron diferencias de dirección/horario por sede, recursos visuales externos rotos y datos/perfiles/redes sin validar.
 - Creado [[plan-de-mejora]] con etapas y preguntas pendientes; revisar respuestas antes de aplicar cambios empresariales.
+
+## [2026-11-06] ingest | datos comerciales informados por el propietario
+- Registrados nombre, NIT, domicilio empresarial y oferta general comunicados directamente por el propietario en [[empresa]].
+- Registrados dirección, horario y teléfono de una ubicación sin asignarlos definitivamente a una sede; la posible relación con Atánquez queda como supuesto hasta confirmación.
+- Actualizadas las preguntas pendientes del [[plan-de-mejora]]; no se cambió la landing porque faltan el contacto completo de Valledupar, la distribución de servicios y datos de privacidad.

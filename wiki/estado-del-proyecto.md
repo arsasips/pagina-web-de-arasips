@@ -24,3 +24,4 @@ fuentes: ["../package.json", "../README.md", "../metadata.json"]
 - **Pendiente:** confirmar dirección, horarios y teléfonos de ambas sedes: hay diferencias entre el plan recibido y los valores del código, y los originales revisados no resuelven la discrepancia.
 - **Pendiente:** validar servicios por sede, textos institucionales, perfiles, autorizaciones de imágenes/personas, actividades, enlaces sociales/Maps y datos de privacidad.
 - **Siguiente paso:** recibir respuestas a las cinco preguntas de [[plan-de-mejora]] y trabajar la primera etapa de corrección de datos confirmados.
+- **Actualización 2026-11-06:** el propietario informó nombre, NIT, domicilio empresarial, ocho servicios y dirección/horario/teléfono de una ubicación. Aún no se modificó la landing porque falta confirmar la sede a la que corresponden los datos, la información de Valledupar y el reparto de servicios.

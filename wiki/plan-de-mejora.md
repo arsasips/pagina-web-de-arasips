@@ -14,7 +14,9 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 ## Lo que encontramos
 
 - **Confirmado:** la web es una aplicación React + TypeScript + Vite con inicio, servicios, sedes, profesionales, citas y portal. Hay dos sedes y botones/enlaces de WhatsApp distintos en el código.
-- **Pendiente:** la dirección y los horarios del código no coinciden con las propuestas del plan recibido para Valledupar ni Atánquez. Los WhatsApp del código tampoco están confirmados contra un documento aprobado.
+- **Confirmado por el propietario (2026-11-06):** nombre informado, NIT `824003324-4`, domicilio empresarial Carrera 17 # 13B bis-14, barrio Alfonso López, y lista general de ocho servicios. Ciudad/sede del domicilio, asignación de servicios y condiciones EPS/particulares pendientes.
+- **Confirmado por el propietario (2026-11-06):** dirección de atención Carrera 4 # 6-52, horario lunes a jueves 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m., viernes 7:00 a. m.–3:00 p. m., teléfono 322 499 3463. La sede no fue nombrada explícitamente; parece coincidir con la propuesta para Atánquez, por confirmar.
+- **Pendiente:** el horario anterior del código no coincide con el horario informado. El teléfono sí coincide con el número que el código asigna a Atánquez, pero no basta por sí solo para confirmar la asignación.
 - **Observado:** el logo y la foto principal usan enlaces externos de Google que fallan en la vista local revisada. Ambas tarjetas de sede reutilizan esa foto. Las fotos de perfiles son de Unsplash y no prueban la identidad de profesionales reales.
 - **Pendiente de validar:** los nombres, reseñas, títulos, registros y horarios de profesionales del código no están respaldados por las fuentes empresariales revisadas; tratarlos como demostrativos hasta confirmación.
 - **Confirmado en el código:** no hay testimonios iniciales cargados. La sección se oculta si la lista está vacía, aunque sigue existiendo una opción local para compartir testimonios.
@@ -24,11 +26,11 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 
 ## Preguntas para cerrar la validación
 
-1. ¿Cuál es el nombre oficial de la sede: **Atánquez** o **Atanquez**? Confírmame por sede la dirección y el horario vigentes, WhatsApp/teléfono y enlace de Google Maps. ¿Los números que aparecen hoy en la página son correctos?
-2. ¿Qué servicios se prestan en cada sede? ¿Atienden particulares además de EPS y cómo debe pedir información una persona particular?
-3. ¿Tienen misión y visión aprobadas? ¿Los nombres, fotos, perfiles y credenciales de profesionales que aparecen hoy en la web son reales, vigentes y autorizados para publicarse? Puedes responder “sí, todos” o señalar cuáles corregir.
-4. Para las actividades comunitarias: ¿con qué frecuencia se realizan, cuál es la próxima fecha confirmada y qué fotos/videos tienen autorización de publicación, especialmente cuando aparecen menores (con permiso de acudiente)?
-5. ¿Cuáles son las URL de sus redes oficiales y existen testimonios autorizados? Para la futura política de datos, ¿cuál es la razón social/NIT, dirección del responsable y correo destinado a consultas de privacidad?
+1. ¿La sede de Atánquez es la de Carrera 4 # 6-52 y teléfono 322 499 3463? ¿La dirección Carrera 17 # 13B bis-14 corresponde a Valledupar? Para esa sede, faltan horario, teléfono/WhatsApp y Maps; comparte también Maps de la primera.
+2. ¿Cómo se reparten los ocho servicios entre las sedes? ¿Atienden particulares además de EPS y qué deben hacer para pedir información?
+3. Queda pendiente para cuando la tengas: misión/visión aprobadas y perfiles profesionales vigentes y autorizados.
+4. Entiendo que respondiste que sí hay autorización para material de actividades. ¿Incluye cada foto/video y, si salen menores, autorización de acudiente? ¿Cada cuánto son las actividades y cuál es la próxima fecha confirmada?
+5. Para cerrar: ¿cuál es el correo de privacidad, las URL de redes oficiales y hay testimonios reales autorizados? El nombre y NIT ya quedaron registrados como informados por ti.
 
 ## Etapas
 

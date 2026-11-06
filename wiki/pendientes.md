@@ -22,3 +22,7 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Pendiente:** confirmar WhatsApp/teléfonos actuales, perfiles y credenciales, redes, textos de misión/visión, servicios por sede y condiciones para particulares.
 - **Pendiente:** identificar sede/fecha y autorización de fotos y videos de `Docs/`, con atención a personas menores; confirmar enlaces Maps y redes oficiales.
 - **Pendiente:** contestar las cinco preguntas de [[plan-de-mejora]] antes de implementar cambios empresariales.
+- **Confirmado por el propietario (2026-11-06):** nombre de empresa, NIT, domicilio empresarial informado, lista general de servicios y un conjunto de datos de dirección/horario/teléfono. La asignación a sedes y el segundo conjunto de contacto requieren aclaración; detalles en [[empresa]].
+- **Pendiente:** para usar imágenes de actividades, precisar el alcance del “sí” recibido: autorización por pieza y permisos de acudientes cuando aparecen menores; confirmar frecuencia y próxima fecha.
+- **Pendiente:** correo de privacidad, dirección/sede y contacto de Valledupar, enlaces de Maps/redes y existencia de testimonios autorizados.
+- **Pendiente por entrega posterior del propietario:** misión, visión y datos aprobados del equipo profesional.
