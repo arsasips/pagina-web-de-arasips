@@ -15,7 +15,8 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 
 - **Confirmado:** la web es una aplicación React + TypeScript + Vite con inicio, servicios, sedes, profesionales, citas y portal. Hay dos sedes y botones/enlaces de WhatsApp distintos en el código.
 - **Confirmado por el propietario (2026-11-06):** nombre informado, NIT `824003324-4`, domicilio empresarial Carrera 17 # 13B bis-14, barrio Alfonso López, y lista general de ocho servicios. Ciudad/sede del domicilio, asignación de servicios y condiciones EPS/particulares pendientes.
-- **Confirmado por el propietario (2026-11-06):** dirección de atención Carrera 4 # 6-52, horario lunes a jueves 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m., viernes 7:00 a. m.–3:00 p. m., teléfono 322 499 3463. La sede no fue nombrada explícitamente; parece coincidir con la propuesta para Atánquez, por confirmar.
+- **Confirmado por el propietario (2026-11-06):** Atánquez corresponde a Carrera 4 # 6-52, horario lunes a jueves 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m., viernes 7:00 a. m.–3:00 p. m., teléfono 322 499 3463. Falta confirmar si también es WhatsApp.
+- **Confirmado por el propietario (2026-11-06):** Valledupar corresponde a Carrera 17 # 13B bis-14, barrio Alfonso López. Horario: lunes y martes 7:00 a. m.–12:30 p. m. y 2:00–5:00 p. m.; miércoles a viernes 7:00 a. m.–12:00 p. m. y 2:00–5:00 p. m. Teléfono/WhatsApp y Maps pendientes.
 - **Pendiente:** el horario anterior del código no coincide con el horario informado. El teléfono sí coincide con el número que el código asigna a Atánquez, pero no basta por sí solo para confirmar la asignación.
 - **Observado:** el logo y la foto principal usan enlaces externos de Google que fallan en la vista local revisada. Ambas tarjetas de sede reutilizan esa foto. Las fotos de perfiles son de Unsplash y no prueban la identidad de profesionales reales.
 - **Pendiente de validar:** los nombres, reseñas, títulos, registros y horarios de profesionales del código no están respaldados por las fuentes empresariales revisadas; tratarlos como demostrativos hasta confirmación.
@@ -26,7 +27,7 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 
 ## Preguntas para cerrar la validación
 
-1. ¿La sede de Atánquez es la de Carrera 4 # 6-52 y teléfono 322 499 3463? ¿La dirección Carrera 17 # 13B bis-14 corresponde a Valledupar? Para esa sede, faltan horario, teléfono/WhatsApp y Maps; comparte también Maps de la primera.
+1. **Parcialmente respondida:** direcciones y horarios de ambas sedes confirmados; queda por confirmar si 322 499 3463 también es WhatsApp de Atánquez, y faltan teléfono/WhatsApp de Valledupar y enlaces Maps de ambas.
 2. ¿Cómo se reparten los ocho servicios entre las sedes? ¿Atienden particulares además de EPS y qué deben hacer para pedir información?
 3. Queda pendiente para cuando la tengas: misión/visión aprobadas y perfiles profesionales vigentes y autorizados.
 4. Entiendo que respondiste que sí hay autorización para material de actividades. ¿Incluye cada foto/video y, si salen menores, autorización de acudiente? ¿Cada cuánto son las actividades y cuál es la próxima fecha confirmada?
@@ -104,4 +105,4 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 
 ## Siguiente paso
 
-Responder las cinco preguntas de validación. Luego se actualizarán las etapas con hechos confirmados y se empezará por el cambio concreto de menor riesgo, una etapa por vez. Véanse [[pendientes]], [[empresa]] y [[documentos-y-activos]].
+Al comenzar la Etapa 2, recordar las preguntas pendientes 2–5 al propietario, según pidió el 2026-11-06. Antes de modificar datos de contacto, confirmar los teléfonos/WhatsApp y Maps que aún faltan. Véanse [[pendientes]], [[empresa]] y [[documentos-y-activos]].

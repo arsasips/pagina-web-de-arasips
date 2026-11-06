@@ -21,7 +21,8 @@ fuentes: ["../package.json", "../README.md", "../metadata.json"]
 - **Pendiente:** el portal y los testimonios usan `localStorage` del navegador; no se comprobó recepción en un sistema institucional ni autenticación. No deben usarse para gestionar datos reales de salud sin una solución autorizada y segura.
 - **Siguiente paso anterior (pendiente de validación):** revisar reemplazo de logos e imagen principal.
 - **Confirmado (2026-11-06):** revisado `PLAN DE MEJORA/25-centro-de-rehabilitacion-y-educacion-especial-arsas-ips-sas/`; contiene el checklist, ZIP de skills SEO y tratamiento de datos, documento de validación y mensaje modelo. Se creó [[plan-de-mejora]] con etapas adaptadas al código.
-- **Pendiente:** confirmar dirección, horarios y teléfonos de ambas sedes: hay diferencias entre el plan recibido y los valores del código, y los originales revisados no resuelven la discrepancia.
+- **Confirmado por el propietario (2026-11-06):** direcciones y horarios de ambas sedes: Atánquez, Carrera 4 # 6-52; Valledupar, Carrera 17 # 13B bis-14, Alfonso López. Los horarios detallados están en [[empresa]]. La web todavía no refleja esta información.
+- **Pendiente:** verificar si 322 499 3463 también es WhatsApp de Atánquez; teléfono/WhatsApp de Valledupar y Maps de ambas sedes.
 - **Pendiente:** validar servicios por sede, textos institucionales, perfiles, autorizaciones de imágenes/personas, actividades, enlaces sociales/Maps y datos de privacidad.
-- **Siguiente paso:** recibir respuestas a las cinco preguntas de [[plan-de-mejora]] y trabajar la primera etapa de corrección de datos confirmados.
-- **Actualización 2026-11-06:** el propietario informó nombre, NIT, domicilio empresarial, ocho servicios y dirección/horario/teléfono de una ubicación. Aún no se modificó la landing porque falta confirmar la sede a la que corresponden los datos, la información de Valledupar y el reparto de servicios.
+- **Siguiente paso:** al comenzar la Etapa 2, recordar al propietario las preguntas pendientes 2–5 de [[plan-de-mejora]]; luego corregir los datos confirmados de contacto y sede.
+- **Actualización 2026-11-06:** el propietario confirmó la asignación de las direcciones y horarios a Atánquez y Valledupar. No se modificó la landing; quedan pendientes algunos canales y mapas.

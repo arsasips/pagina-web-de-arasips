@@ -51,3 +51,8 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Registrados nombre, NIT, domicilio empresarial y oferta general comunicados directamente por el propietario en [[empresa]].
 - Registrados dirección, horario y teléfono de una ubicación sin asignarlos definitivamente a una sede; la posible relación con Atánquez queda como supuesto hasta confirmación.
 - Actualizadas las preguntas pendientes del [[plan-de-mejora]]; no se cambió la landing porque faltan el contacto completo de Valledupar, la distribución de servicios y datos de privacidad.
+
+## [2026-11-06] ingest | sedes y horarios confirmados
+- Confirmado que la dirección, horario y teléfono informados primero corresponden a Atánquez; añadidos los horarios de Valledupar y su dirección a [[empresa]].
+- Registrado que queda pendiente confirmar WhatsApp de Atánquez, contacto y Maps de Valledupar, y Maps de ambas sedes.
+- Según preferencia del propietario, las preguntas pendientes 2–5 se recordarán al iniciar la Etapa 2; actualizado [[plan-de-mejora]] y [[decisiones]]. No se editó el sitio.

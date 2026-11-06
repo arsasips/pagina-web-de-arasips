@@ -18,7 +18,8 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Pendiente antes de usar funciones con datos reales:** las citas y testimonios se guardan en `localStorage` sin backend ni autenticación institucional. Mantener estas funciones solo para demostración hasta que exista un destino seguro y autorizado.
 - **Confirmado:** dependencias instaladas y `package-lock.json` creado. `npm run lint` y `npm run build` pasaron.
 - **Confirmado:** el commit inicial ya está en el repositorio público `arsasips/pagina-web-de-arasips`, rama `main`.
-- **Pendiente (2026-11-06):** validar los datos contradictorios de dirección y horarios entre `PLAN DE MEJORA/` y `src/data/mockData.ts` para ambas sedes antes de corregir la web.
+- **Resuelto parcialmente (2026-11-06):** el propietario confirmó dirección y horarios de Atánquez y Valledupar. La web aún contiene valores anteriores y no se ha actualizado.
+- **Pendiente:** confirmar si el teléfono 322 499 3463 de Atánquez es también su WhatsApp; pedir teléfono/WhatsApp de Valledupar y enlaces de Maps de ambas sedes.
 - **Pendiente:** confirmar WhatsApp/teléfonos actuales, perfiles y credenciales, redes, textos de misión/visión, servicios por sede y condiciones para particulares.
 - **Pendiente:** identificar sede/fecha y autorización de fotos y videos de `Docs/`, con atención a personas menores; confirmar enlaces Maps y redes oficiales.
 - **Pendiente:** contestar las cinco preguntas de [[plan-de-mejora]] antes de implementar cambios empresariales.
@@ -26,3 +27,4 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Pendiente:** para usar imágenes de actividades, precisar el alcance del “sí” recibido: autorización por pieza y permisos de acudientes cuando aparecen menores; confirmar frecuencia y próxima fecha.
 - **Pendiente:** correo de privacidad, dirección/sede y contacto de Valledupar, enlaces de Maps/redes y existencia de testimonios autorizados.
 - **Pendiente por entrega posterior del propietario:** misión, visión y datos aprobados del equipo profesional.
+- **Preferencia/instrucción confirmada (2026-11-06):** recordar las preguntas pendientes 2–5 de [[plan-de-mejora]] al comenzar la Etapa 2; el propietario las responderá entonces.

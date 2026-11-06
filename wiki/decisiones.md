@@ -2,9 +2,9 @@
 tipo: decisiones
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-10-29
+actualizado: 2026-11-06
 tags: [decisiones]
-fuentes: ["../AGENTS.md", "[[documentos-y-activos]]"]
+fuentes: ["../AGENTS.md", "[[documentos-y-activos]]", "Propietario, respuestas en conversación 2026-11-06"]
 ---
 
 # Decisiones
@@ -30,3 +30,7 @@ fuentes: ["../AGENTS.md", "[[documentos-y-activos]]"]
 - **Confirmado:** eliminar los registros de cita, identificaciones de búsqueda de ejemplo y testimonios no validados del contenido inicial. La aplicación migra solo las entradas de demostración conocidas que ya estaban en `localStorage`; no elimina otros registros.
 - **Confirmado:** excluir `screen.png` del repositorio porque contiene las muestras de la landing; el archivo original permanece en la carpeta de trabajo.
 - **Motivo:** preparar el proyecto para repositorio remoto evitando divulgar datos potencialmente privados o testimonios no autorizados.
+
+## 2026-11-06 — Recordar preguntas pendientes al comenzar la Etapa 2
+- **Confirmado por el propietario:** posponer las preguntas pendientes 2–5 del plan hasta comenzar la Etapa 2 y recordárselas entonces.
+- **Motivo:** el propietario prefiere responderlas durante esa etapa; conservarlas como pendientes sin bloquear el avance de la wiki.
