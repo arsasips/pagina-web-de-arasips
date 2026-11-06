@@ -2,7 +2,7 @@
 tipo: estado
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-10-29
+actualizado: 2026-11-06
 tags: [proyecto, estado]
 fuentes: ["../package.json", "../README.md", "../metadata.json"]
 ---
@@ -19,4 +19,8 @@ fuentes: ["../package.json", "../README.md", "../metadata.json"]
 - **Confirmado:** identidad Git configurada solo en este repositorio como `arsasips` / `arsasfacturacion@gmail.com`. Repositorio público `https://github.com/arsasips/pagina-web-de-arasips`; código y wiki subidos a `main`, commit de la landing `039572805697edf6bec1ce0cec120865758e7f2b`. Git local queda conectado a `origin/main`.
 - **Pendiente:** la landing no se ha publicado como sitio web; subir el código a GitHub no la despliega.
 - **Pendiente:** el portal y los testimonios usan `localStorage` del navegador; no se comprobó recepción en un sistema institucional ni autenticación. No deben usarse para gestionar datos reales de salud sin una solución autorizada y segura.
-- **Siguiente paso:** elegir si se reemplazan los dos logos externos fallidos con el logo local de `Docs/` (tras validarlo para web) o si se prefiere otra mejora; revisar en móvil.
+- **Siguiente paso anterior (pendiente de validación):** revisar reemplazo de logos e imagen principal.
+- **Confirmado (2026-11-06):** revisado `PLAN DE MEJORA/25-centro-de-rehabilitacion-y-educacion-especial-arsas-ips-sas/`; contiene el checklist, ZIP de skills SEO y tratamiento de datos, documento de validación y mensaje modelo. Se creó [[plan-de-mejora]] con etapas adaptadas al código.
+- **Pendiente:** confirmar dirección, horarios y teléfonos de ambas sedes: hay diferencias entre el plan recibido y los valores del código, y los originales revisados no resuelven la discrepancia.
+- **Pendiente:** validar servicios por sede, textos institucionales, perfiles, autorizaciones de imágenes/personas, actividades, enlaces sociales/Maps y datos de privacidad.
+- **Siguiente paso:** recibir respuestas a las cinco preguntas de [[plan-de-mejora]] y trabajar la primera etapa de corrección de datos confirmados.

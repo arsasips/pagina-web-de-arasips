@@ -2,7 +2,7 @@
 tipo: registro
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-10-29
+actualizado: 2026-11-06
 tags: [log]
 fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 ---
@@ -39,3 +39,10 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - El usuario completó la autenticación en Git Credential Manager.
 - Subido el commit `039572805697edf6bec1ce0cec120865758e7f2b` a `arsasips/pagina-web-de-arasips`, rama `main`.
 - Verificado en GitHub: el último commit aparece en el repositorio y están visibles `src/` y `wiki/`; no se subieron `Docs/`, `screen.png`, `node_modules/` ni `dist/`.
+
+## [2026-11-06] plan | análisis de carpeta de mejora ARSAS
+
+- Revisado el checklist, su guía de skills y la lista de validación dentro de `PLAN DE MEJORA/`.
+- Identificadas las skills SEO y tratamiento de datos empaquetadas localmente; las skills de diseño/móvil nombradas no están instaladas. No se instaló nada ni se modificó la landing.
+- Contrastado el checklist con el código y el catálogo de `Docs/`; se anotaron diferencias de dirección/horario por sede, recursos visuales externos rotos y datos/perfiles/redes sin validar.
+- Creado [[plan-de-mejora]] con etapas y preguntas pendientes; revisar respuestas antes de aplicar cambios empresariales.

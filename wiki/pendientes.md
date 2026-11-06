@@ -2,7 +2,7 @@
 tipo: pendientes
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-10-29
+actualizado: 2026-11-06
 tags: [pendientes]
 fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 ---
@@ -18,3 +18,7 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Pendiente antes de usar funciones con datos reales:** las citas y testimonios se guardan en `localStorage` sin backend ni autenticación institucional. Mantener estas funciones solo para demostración hasta que exista un destino seguro y autorizado.
 - **Confirmado:** dependencias instaladas y `package-lock.json` creado. `npm run lint` y `npm run build` pasaron.
 - **Confirmado:** el commit inicial ya está en el repositorio público `arsasips/pagina-web-de-arasips`, rama `main`.
+- **Pendiente (2026-11-06):** validar los datos contradictorios de dirección y horarios entre `PLAN DE MEJORA/` y `src/data/mockData.ts` para ambas sedes antes de corregir la web.
+- **Pendiente:** confirmar WhatsApp/teléfonos actuales, perfiles y credenciales, redes, textos de misión/visión, servicios por sede y condiciones para particulares.
+- **Pendiente:** identificar sede/fecha y autorización de fotos y videos de `Docs/`, con atención a personas menores; confirmar enlaces Maps y redes oficiales.
+- **Pendiente:** contestar las cinco preguntas de [[plan-de-mejora]] antes de implementar cambios empresariales.
