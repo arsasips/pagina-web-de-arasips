@@ -25,6 +25,28 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 - **Pendiente:** el material visual propio de `Docs/` incluye fotos de fachada, piezas gráficas, actividades con adultos y menores y videos; no están confirmados todos los lugares, fechas ni consentimientos. No usar imágenes de personas/menores hasta confirmar autorización.
 - **Pendiente:** misión/visión aprobadas, servicios por sede, condiciones para particulares, enlaces Maps, redes oficiales, testimonios autorizados y datos del responsable de privacidad.
 
+## Resultado del Paso 1 · Material por sede
+
+### Valledupar
+
+- **Confirmado por el propietario:** dirección Carrera 17 # 13B bis-14, barrio Alfonso López, y horario registrado en [[empresa]].
+- **Material disponible:** el logo y la paleta institucional son comunes a la empresa. `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/FACHADA.jpeg` muestra una fachada, pero no está identificada como Valledupar; no atribuirla a esta sede todavía. Hay piezas gráficas de servicios y material de actividades, pero no se ha asociado cada pieza a esta sede.
+- **Falta:** una foto de fachada/instalaciones confirmada como Valledupar, teléfono/WhatsApp, enlace Maps, servicios que presta esta sede y permisos específicos para fotos/videos con personas.
+
+### Atánquez
+
+- **Confirmado por el propietario:** sede Atánquez en Carrera 4 # 6-52, teléfono 322 499 3463 y horario registrado en [[empresa]]. El teléfono como canal de WhatsApp está pendiente de confirmación.
+- **Material disponible:** `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/FACHADA SEDE ATANQUE.jpeg` muestra una fachada rotulada ARSAS y es el único archivo visual nombrado por sede. También hay fotos de actividades comunitarias, varias con menores, y videos.
+- **Falta:** enlace Maps, confirmar si el teléfono es WhatsApp, identificar cuáles fotos/videos corresponden a Atánquez, fechas y descripción de actividades, y confirmar autorización de cada material (incluido acudiente para menores).
+
+### Material compartido y hallazgos en la página
+
+- `LOGO.jpeg` y `PALETA DE COLORES.jpeg` son activos corporativos compartidos; revisar calidad y aprobación para el sitio antes de copiarlos a `public/`.
+- Hay 17 imágenes JPEG/PNG inventariadas visualmente: fachadas, piezas de servicios, actividades y capturas de referencia. Las capturas de `sesion 2` son referencias, no fotos para publicar. El DOCX de membrete contiene cuatro imágenes incrustadas pero no fue posible previsualizarlo; los 23 videos aún no se reprodujeron.
+- En el sitio actual, los logos remotos no cargan y la imagen de portada remota no está acreditada como foto de ARSAS; las tarjetas de ambas sedes reutilizan esa imagen. Las fotos de perfiles vienen de Unsplash (stock), no demuestran la identidad del personal. Los nombres, credenciales y reseñas de perfiles quedan sin validar.
+- **Testimonios:** el código actual no precarga testimonios de muestra y oculta su sección cuando no hay entradas. No se encontraron testimonios empresariales aprobados en el catálogo revisado.
+- **Pendiente:** la oferta general que informó el propietario no está distribuida por sede; tampoco se confirmaron misión/visión, atención a particulares, redes oficiales ni testimonios autorizados.
+
 ## Preguntas para cerrar la validación
 
 1. **Parcialmente respondida:** direcciones y horarios de ambas sedes confirmados; queda por confirmar si 322 499 3463 también es WhatsApp de Atánquez, y faltan teléfono/WhatsApp de Valledupar y enlaces Maps de ambas.

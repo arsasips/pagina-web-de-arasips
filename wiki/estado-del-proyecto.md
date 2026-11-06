@@ -26,3 +26,4 @@ fuentes: ["../package.json", "../README.md", "../metadata.json"]
 - **Pendiente:** validar servicios por sede, textos institucionales, perfiles, autorizaciones de imágenes/personas, actividades, enlaces sociales/Maps y datos de privacidad.
 - **Siguiente paso:** al comenzar la Etapa 2, recordar al propietario las preguntas pendientes 2–5 de [[plan-de-mejora]]; luego corregir los datos confirmados de contacto y sede.
 - **Actualización 2026-11-06:** el propietario confirmó la asignación de las direcciones y horarios a Atánquez y Valledupar. No se modificó la landing; quedan pendientes algunos canales y mapas.
+- **Confirmado (2026-11-06):** completada la auditoría del Paso 1 del checklist. El resultado por sede y las imágenes de ejemplo/no acreditadas están en [[plan-de-mejora]]. No se modificó el sitio; se marcó el paso como completado con pendientes explícitos.

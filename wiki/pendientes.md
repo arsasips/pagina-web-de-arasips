@@ -28,3 +28,4 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Pendiente:** correo de privacidad, dirección/sede y contacto de Valledupar, enlaces de Maps/redes y existencia de testimonios autorizados.
 - **Pendiente por entrega posterior del propietario:** misión, visión y datos aprobados del equipo profesional.
 - **Preferencia/instrucción confirmada (2026-11-06):** recordar las preguntas pendientes 2–5 de [[plan-de-mejora]] al comenzar la Etapa 2; el propietario las responderá entonces.
+- **Pendiente del Paso 1:** identificar si `CARPETA NUEVO/FACHADA.jpeg` corresponde a Valledupar; asignar fotos/videos de actividades a sede y fecha, y confirmar autorizaciones antes de publicarlos.

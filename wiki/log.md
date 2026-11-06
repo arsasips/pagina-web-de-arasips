@@ -56,3 +56,8 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Confirmado que la dirección, horario y teléfono informados primero corresponden a Atánquez; añadidos los horarios de Valledupar y su dirección a [[empresa]].
 - Registrado que queda pendiente confirmar WhatsApp de Atánquez, contacto y Maps de Valledupar, y Maps de ambas sedes.
 - Según preferencia del propietario, las preguntas pendientes 2–5 se recordarán al iniciar la Etapa 2; actualizado [[plan-de-mejora]] y [[decisiones]]. No se editó el sitio.
+
+## [2026-11-06] auditoría | Paso 1 del plan de mejora
+- Revisados el código de la landing y el inventario visual existente de `Docs/`; redactado el resultado por sede en [[plan-de-mejora]].
+- Identificada fachada rotulada para Atánquez; la fachada restante no está asignada a Valledupar. Registrados logos remotos rotos, imagen de portada no acreditada, fotos de stock en perfiles y ausencia de testimonios precargados.
+- Marcado el Paso 1 como completado en el checklist local, dejando pendientes de autorización, identificación y datos. No se modificó la página.
