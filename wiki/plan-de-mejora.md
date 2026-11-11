@@ -31,13 +31,13 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 
 - **Confirmado por el propietario:** dirección Carrera 17 # 13B bis-14, barrio Alfonso López, y horario registrado en [[empresa]].
 - **Material disponible:** el logo y la paleta institucional son comunes a la empresa. `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/FACHADA.jpeg` muestra la sede de Valledupar y su aviso incluye la dirección Carrera 17 # 13B bis-14. El volante muestra el número 310 560 6873 y `arsasipsvalledupar@gmail.com`; el código asocia ese número con Valledupar. La lista de servicios del volante no especifica sede.
-- **Falta:** enlace Maps, confirmar vigencia del teléfono/correo y si el número recibe WhatsApp, definir los servicios vigentes en Valledupar y permisos para fotos/videos con personas.
+- **Falta:** enlace Maps, confirmar vigencia del correo y definir los servicios vigentes en Valledupar.
 
 ### Atánquez
 
 - **Confirmado por el propietario:** sede Atánquez en Carrera 4 # 6-52, teléfono 322 499 3463 y horario registrado en [[empresa]]. El teléfono como canal de WhatsApp está pendiente de confirmación.
 - **Material disponible:** `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/FACHADA SEDE ATANQUE.jpeg` muestra la fachada de ARSAS y anuncia fisiatría, neuropsicología, fisioterapia, fonoaudiología, terapia ocupacional y psicología. El volante de rehabilitación presenta también el número 322 499 3463 y `arsasipsatanquez@gmail.com`. Hay fotos de actividades comunitarias, algunas con menores, y videos.
-- **Falta:** enlace Maps, confirmar vigencia de teléfono/correo y si el número recibe WhatsApp, identificar qué fotos/videos corresponden a Atánquez, las fechas/descripción de actividades y la autorización de cada material (incluido acudiente para menores).
+- **Falta:** enlace Maps, confirmar vigencia del correo, identificar las fotos/videos de actividades y sus fechas/descripciones, y confirmar autorización de cada material (incluidos acudientes para menores).
 
 ### Material compartido y hallazgos en la página
 
@@ -79,14 +79,14 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 - Asegurar que la selección/cambio de sede mantenga juntos todos sus datos sin cruces y que la sede elegida se recuerde de manera comprensible.
 - **Criterio de cierre:** enlaces y datos coinciden entre toda la landing y se abren a la sede correcta.
 - **Implementación local lista (2026-11-11):** se añadió selector inicial y control persistente para cambiar sede; dirección, horario y WhatsApp seleccionados se enlazan en cabecera, accesos de contacto, sedes, preguntas frecuentes y pie. `Sedes` sincroniza la selección global y queda recordada en este navegador. Ambos números fueron confirmados como WhatsApp. La página ya informa que la oferta cambia por sede, sin afirmar disponibilidad no confirmada.
-- **Pendiente para cerrar la etapa:** enlaces de Maps cuando se compartan y revisión visual directa en navegador (limitada durante esta sesión por bloqueo de conexión local del navegador integrado).
+- **Pendiente para cerrar la etapa:** enlaces de Maps cuando se compartan; prueba del cambio de sede y revisión móvil aún pendientes. La revisión de escritorio se retomó el 2026-11-11 y confirmó que cargan las fachadas.
 
 ### Etapa 3 · Sustituir activos de muestra por identidad y fotos propias
 
 - Preparar el logo de `Docs/` para web y reemplazar el logo externo roto una vez aprobada su versión.
 - Elegir fotos reales identificadas como Valledupar o Atánquez para portada y tarjetas. No publicar retratos ni escenas con personas/menores sin autorización comprobada.
 - **Criterio de cierre:** no hay imágenes externas rotas ni fotos de stock presentadas como equipo o sedes reales.
-- **Avance (2026-11-11):** el propietario identificó y autorizó para usar como fondo la foto `Docs/.../CARPETA NUEVO/FACHADA.jpeg` de Valledupar. Copiada a `public/images/sede-valledupar-fachada.jpeg` y conectada con la imagen principal, tarjeta de Valledupar y vista de detalle de la sede. El original permanece en Docs; reemplazo del logo y foto de Atánquez siguen pendientes.
+- **Avance (2026-11-11):** el propietario identificó y pidió usar como fondo las fotos de ambas sedes: `Docs/.../CARPETA NUEVO/FACHADA.jpeg` (Valledupar) y `Docs/.../FACHADA SEDE ATANQUE.jpeg` (Atánquez). Se copiaron sin alterar a `public/images/sede-valledupar-fachada.jpeg` y `public/images/sede-atanquez-fachada.jpeg`; la portada sigue la sede activa y las tarjetas/detalles muestran la fachada correspondiente. Los originales permanecen en Docs; el reemplazo del logo sigue pendiente.
 
 ### Etapa 4 · Alinear oferta, misión y visión
 

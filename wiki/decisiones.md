@@ -45,3 +45,8 @@ fuentes: ["../AGENTS.md", "[[documentos-y-activos]]", "Propietario, respuestas e
 - **Confirmado por el propietario:** `Docs/.../CARPETA NUEVO/FACHADA.jpeg` corresponde a la sede Valledupar y debe usarse como fondo.
 - **Decisión de implementación:** preservar el original y copiar el archivo a `public/images/sede-valledupar-fachada.jpeg` para la página; conectarlo con el visual principal y las vistas de esa sede.
 - **Fuente:** propietario, respuesta en conversación 2026-11-11; [[documentos-y-activos]].
+
+## 2026-11-11 — Usar la fachada de Atánquez como fondo
+- **Confirmado por el propietario:** `Docs/.../FACHADA SEDE ATANQUE.jpeg` es la fachada de Atánquez y debe usarse para esa sede.
+- **Decisión de implementación:** preservar el original y usar una copia técnica en `public/images/sede-atanquez-fachada.jpeg`; la portada y las vistas por sede muestran la imagen correspondiente a la selección activa.
+- **Fuente:** propietario, respuesta en conversación 2026-11-11; [[documentos-y-activos]].

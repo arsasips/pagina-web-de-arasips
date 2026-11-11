@@ -3,9 +3,6 @@ import { ServiceItem, Specialist, SedeInfo, SedeName, Testimonial, FaqItem, Appo
 export const CLINIC_LOGO_URL =
   'https://lh3.googleusercontent.com/aida/AEtjO1U4ES9cKF5FltLJcdExb-E1aSRjywK3gzz1oh_zOAqKWLdFQ_5chGi8S4oCiLi3RGvLLvf-GgnazeBZ0tOodioxH9puvZMhKdCL_a63BApQ8Yz7WppDaO6uytlOc9UfO5Y3beg5iNLzM_BYLakiRfQll3lVZqkwS2wG5_7V8qJKJvuBD8ZxrUxCQIF2EMSVD4hgbrdzBz0rP2Rb7JI_E83Pd1nBp1zCYYIUA_AwIg0';
 
-export const CLINIC_FACADE_URL =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBPROvDPuZ-H5JR5wxFdWhaGkEKzNpTdwUEs8z2l-ioAvhgEM1ngyPBsZU8veLqMJIks8HwUQWg5HCBhthl0gNDqYCJYMhTeFQWoIGLcbolTINKoBLu0858EzZnp8eprfszr-201yD-elkLxQnZm-RpQrPSj13_g_6lPwiTOxQw22vYjXGiyRpAwy_MfwAEBf5qx0awXsRdM211c-N_U6aPVrW9ZiALHJBin6AVdeQ';
-
 export const SEDES_DATA: Record<'valledupar' | 'atanquez', SedeInfo> = {
   valledupar: {
     id: 'valledupar',
@@ -46,7 +43,7 @@ export const SEDES_DATA: Record<'valledupar' | 'atanquez', SedeInfo> = {
       'Atención y seguimiento a familias y comunidades de la Sierra',
       'Punto de recepción y orientación en trámites de salud EPS',
     ],
-    image: CLINIC_FACADE_URL,
+    image: '/images/sede-atanquez-fachada.jpeg',
     description:
       'Compromiso de cercanía e inclusión territorial en las estribaciones de la Sierra Nevada para familias de Atánquez y pueblos cercanos.',
   },

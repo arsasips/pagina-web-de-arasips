@@ -82,3 +82,13 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - El propietario identificó `Docs/.../CARPETA NUEVO/FACHADA.jpeg` como foto de la sede Valledupar e indicó usarla como fondo.
 - Revisada visualmente; copiada sin alterar a `public/images/sede-valledupar-fachada.jpeg`. El sitio la usa en el visual principal, la tarjeta y el detalle de Valledupar. Original conservado en Docs.
 - Actualizados [[documentos-y-activos]], [[estado-del-proyecto]], [[plan-de-mejora]] y [[decisiones]].
+
+## [2026-11-11] activo | Fachada de Atánquez
+- A petición del propietario, revisada visualmente `Docs/.../FACHADA SEDE ATANQUE.jpeg` y asignada a Atánquez.
+- Copiada sin alterar a `public/images/sede-atanquez-fachada.jpeg`; conectada a la portada dinámica, tarjeta y detalle de Atánquez. Original conservado en Docs.
+- Retirado el enlace de fachada genérica externa. Actualizados [[documentos-y-activos]], [[estado-del-proyecto]], [[plan-de-mejora]] y [[decisiones]].
+
+## [2026-11-11] verificación | Fondos de ambas sedes
+- Revisada la página en el navegador local de escritorio; las dos fachadas servidas desde `public/images/` aparecen cargadas con ancho natural de 1600 px.
+- Confirmados `npm run lint`, `npm run build` y respuestas HTTP 200 para la página y ambos JPEG.
+- No se envió información; revisión móvil aún pendiente.

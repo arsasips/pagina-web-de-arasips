@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   SERVICES_DATA,
   SEDES_DATA,
-  CLINIC_FACADE_URL,
 } from '../data/mockData';
 import { ServiceItem, Testimonial, FaqItem, ActiveView, SedeName } from '../types';
 
@@ -621,7 +620,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <img
                   alt="Sede Atánquez ARSAS IPS"
                   className="w-full h-full object-cover"
-                  src={CLINIC_FACADE_URL}
+                  src={SEDES_DATA.atanquez.image}
                 />
                 <div className="absolute top-4 left-4 bg-[#004b72] text-white px-4 py-1 rounded-full text-xs uppercase font-bold tracking-wider">
                   Comunidad y Territorio
