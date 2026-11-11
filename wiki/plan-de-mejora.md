@@ -2,7 +2,7 @@
 tipo: plan
 estado: borrador-pendiente-de-validacion
 creado: 2026-11-06
-actualizado: 2026-11-06
+actualizado: 2026-11-11
 tags: [landing, mejoras, ARSAS]
 fuentes: ["../PLAN DE MEJORA/25-centro-de-rehabilitacion-y-educacion-especial-arsas-ips-sas/plan-mejoras.md", "../PLAN DE MEJORA/25-centro-de-rehabilitacion-y-educacion-especial-arsas-ips-sas/validacion-con-cliente.md", "[[estado-del-proyecto]]", "[[empresa]]", "[[documentos-y-activos]]"]
 ---
@@ -14,15 +14,15 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 ## Lo que encontramos
 
 - **Confirmado:** la web es una aplicación React + TypeScript + Vite con inicio, servicios, sedes, profesionales, citas y portal. Hay dos sedes y botones/enlaces de WhatsApp distintos en el código.
-- **Confirmado por el propietario (2026-11-06):** nombre informado, NIT `824003324-4`, domicilio empresarial Carrera 17 # 13B bis-14, barrio Alfonso López, y lista general de ocho servicios. Ciudad/sede del domicilio, asignación de servicios y condiciones EPS/particulares pendientes.
+- **Confirmado por el propietario (2026-11-06):** nombre informado, NIT `824003324-4`, domicilio empresarial Carrera 17 # 13B bis-14, barrio Alfonso López y lista general de ocho servicios. La dirección corresponde a Valledupar; la asignación de servicios y las condiciones EPS/particulares están pendientes.
 - **Confirmado por el propietario (2026-11-06):** Atánquez corresponde a Carrera 4 # 6-52, horario lunes a jueves 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m., viernes 7:00 a. m.–3:00 p. m., teléfono 322 499 3463. Falta confirmar si también es WhatsApp.
-- **Confirmado por el propietario (2026-11-06):** Valledupar corresponde a Carrera 17 # 13B bis-14, barrio Alfonso López. Horario: lunes y martes 7:00 a. m.–12:30 p. m. y 2:00–5:00 p. m.; miércoles a viernes 7:00 a. m.–12:00 p. m. y 2:00–5:00 p. m. Teléfono/WhatsApp y Maps pendientes.
-- **Pendiente:** el horario anterior del código no coincide con el horario informado. El teléfono sí coincide con el número que el código asigna a Atánquez, pero no basta por sí solo para confirmar la asignación.
+- **Confirmado por el propietario (2026-11-06):** Valledupar corresponde a Carrera 17 # 13B bis-14, barrio Alfonso López. Horario: lunes y martes 7:00 a. m.–12:30 p. m. y 2:00–5:00 p. m.; miércoles a viernes 7:00 a. m.–12:00 p. m. y 2:00–5:00 p. m.
+- **Encontrado en `Docs/REHABILTACION.jpeg`:** el volante incluye los números 322 499 3463 y 310 560 6873 y correos por sede. El código los enlaza a WhatsApp; el volante por sí solo no confirma que ambos números reciban WhatsApp ni que sigan vigentes. Los enlaces Maps de las dos sedes siguen pendientes.
 - **Observado:** el logo y la foto principal usan enlaces externos de Google que fallan en la vista local revisada. Ambas tarjetas de sede reutilizan esa foto. Las fotos de perfiles son de Unsplash y no prueban la identidad de profesionales reales.
-- **Pendiente de validar:** los nombres, reseñas, títulos, registros y horarios de profesionales del código no están respaldados por las fuentes empresariales revisadas; tratarlos como demostrativos hasta confirmación.
+- **Pendiente de validar:** los perfiles de profesionales que ya están en el código no están respaldados por las fuentes revisadas; Docs contiene una credencial profesional individual que no se ha asociado a esos perfiles y cuya publicación requiere validación.
 - **Confirmado en el código:** no hay testimonios iniciales cargados. La sección se oculta si la lista está vacía, aunque sigue existiendo una opción local para compartir testimonios.
 - **Observado:** el pie incluye enlaces genéricos a Facebook e Instagram, no a perfiles específicos de ARSAS.
-- **Pendiente:** el material visual propio de `Docs/` incluye fotos de fachada, piezas gráficas, actividades con adultos y menores y videos; no están confirmados todos los lugares, fechas ni consentimientos. No usar imágenes de personas/menores hasta confirmar autorización.
+- **Pendiente:** el material visual de `Docs/` incluye fotos de ambas fachadas, piezas gráficas, actividades con adultos y menores y videos; faltan fechas y autorizaciones de cada foto/video. No usar imágenes de personas/menores hasta confirmar autorización.
 - **Pendiente:** misión/visión aprobadas, servicios por sede, condiciones para particulares, enlaces Maps, redes oficiales, testimonios autorizados y datos del responsable de privacidad.
 
 ## Resultado del Paso 1 · Material por sede
@@ -30,26 +30,29 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 ### Valledupar
 
 - **Confirmado por el propietario:** dirección Carrera 17 # 13B bis-14, barrio Alfonso López, y horario registrado en [[empresa]].
-- **Material disponible:** el logo y la paleta institucional son comunes a la empresa. `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/FACHADA.jpeg` muestra una fachada, pero no está identificada como Valledupar; no atribuirla a esta sede todavía. Hay piezas gráficas de servicios y material de actividades, pero no se ha asociado cada pieza a esta sede.
-- **Falta:** una foto de fachada/instalaciones confirmada como Valledupar, teléfono/WhatsApp, enlace Maps, servicios que presta esta sede y permisos específicos para fotos/videos con personas.
+- **Material disponible:** el logo y la paleta institucional son comunes a la empresa. `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/FACHADA.jpeg` muestra la sede de Valledupar y su aviso incluye la dirección Carrera 17 # 13B bis-14. El volante muestra el número 310 560 6873 y `arsasipsvalledupar@gmail.com`; el código asocia ese número con Valledupar. La lista de servicios del volante no especifica sede.
+- **Falta:** enlace Maps, confirmar vigencia del teléfono/correo y si el número recibe WhatsApp, definir los servicios vigentes en Valledupar y permisos para fotos/videos con personas.
 
 ### Atánquez
 
 - **Confirmado por el propietario:** sede Atánquez en Carrera 4 # 6-52, teléfono 322 499 3463 y horario registrado en [[empresa]]. El teléfono como canal de WhatsApp está pendiente de confirmación.
-- **Material disponible:** `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/FACHADA SEDE ATANQUE.jpeg` muestra una fachada rotulada ARSAS y es el único archivo visual nombrado por sede. También hay fotos de actividades comunitarias, varias con menores, y videos.
-- **Falta:** enlace Maps, confirmar si el teléfono es WhatsApp, identificar cuáles fotos/videos corresponden a Atánquez, fechas y descripción de actividades, y confirmar autorización de cada material (incluido acudiente para menores).
+- **Material disponible:** `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/FACHADA SEDE ATANQUE.jpeg` muestra la fachada de ARSAS y anuncia fisiatría, neuropsicología, fisioterapia, fonoaudiología, terapia ocupacional y psicología. El volante de rehabilitación presenta también el número 322 499 3463 y `arsasipsatanquez@gmail.com`. Hay fotos de actividades comunitarias, algunas con menores, y videos.
+- **Falta:** enlace Maps, confirmar vigencia de teléfono/correo y si el número recibe WhatsApp, identificar qué fotos/videos corresponden a Atánquez, las fechas/descripción de actividades y la autorización de cada material (incluido acudiente para menores).
 
 ### Material compartido y hallazgos en la página
 
 - `LOGO.jpeg` y `PALETA DE COLORES.jpeg` son activos corporativos compartidos; revisar calidad y aprobación para el sitio antes de copiarlos a `public/`.
-- Hay 17 imágenes JPEG/PNG inventariadas visualmente: fachadas, piezas de servicios, actividades y capturas de referencia. Las capturas de `sesion 2` son referencias, no fotos para publicar. El DOCX de membrete contiene cuatro imágenes incrustadas pero no fue posible previsualizarlo; los 23 videos aún no se reprodujeron.
+- Hay 17 imágenes JPEG/PNG inventariadas visualmente: fachadas, piezas de servicios, actividades y capturas de referencia. Las capturas de `sesion 2` son referencias, no fotos para publicar. El DOCX contiene cuatro imágenes incrustadas, incluida una credencial profesional que podría servir de soporte para un perfil; faltan verificar vigencia y autorización. Los 23 videos aún no se reprodujeron.
+- El volante de rehabilitación enumera neuropediatría, neuropsicología, psicología, fonoaudiología, terapia ocupacional y fisioterapia. El volante de salud mental enumera psiquiatría, medicina general, psicología, trabajo social, terapia ocupacional y fisioterapia. La fachada de Atánquez anuncia fisiatría, neuropsicología, fisioterapia, fonoaudiología, terapia ocupacional y psicología. Estas listas difieren de la lista general más reciente del propietario; confirmar vigencia y sede de cada servicio.
+- El volante imprime 322 499 3463, 310 560 6873 y los correos `arsasipsatanquez@gmail.com` / `arsasipsvalledupar@gmail.com`. La pieza no rotula con claridad el canal WhatsApp; el código actual enlaza esos teléfonos a WhatsApp.
+- Una imagen incrustada en el membrete muestra una credencial profesional de fonoaudiología. No divulgar sus datos ni crear un perfil público hasta confirmar vigencia y autorización.
 - En el sitio actual, los logos remotos no cargan y la imagen de portada remota no está acreditada como foto de ARSAS; las tarjetas de ambas sedes reutilizan esa imagen. Las fotos de perfiles vienen de Unsplash (stock), no demuestran la identidad del personal. Los nombres, credenciales y reseñas de perfiles quedan sin validar.
 - **Testimonios:** el código actual no precarga testimonios de muestra y oculta su sección cuando no hay entradas. No se encontraron testimonios empresariales aprobados en el catálogo revisado.
 - **Pendiente:** la oferta general que informó el propietario no está distribuida por sede; tampoco se confirmaron misión/visión, atención a particulares, redes oficiales ni testimonios autorizados.
 
 ## Preguntas para cerrar la validación
 
-1. **Parcialmente respondida:** direcciones y horarios de ambas sedes confirmados; queda por confirmar si 322 499 3463 también es WhatsApp de Atánquez, y faltan teléfono/WhatsApp de Valledupar y enlaces Maps de ambas.
+1. **Parcialmente respondida:** direcciones y horarios confirmados; `Docs/` contiene dos teléfonos y dos correos por sede. Quedan por confirmar vigencia y uso de WhatsApp, además de los enlaces Maps.
 2. ¿Cómo se reparten los ocho servicios entre las sedes? ¿Atienden particulares además de EPS y qué deben hacer para pedir información?
 3. Queda pendiente para cuando la tengas: misión/visión aprobadas y perfiles profesionales vigentes y autorizados.
 4. Entiendo que respondiste que sí hay autorización para material de actividades. ¿Incluye cada foto/video y, si salen menores, autorización de acudiente? ¿Cada cuánto son las actividades y cuál es la próxima fecha confirmada?

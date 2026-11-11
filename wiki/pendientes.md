@@ -2,14 +2,14 @@
 tipo: pendientes
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-11-06
+actualizado: 2026-11-11
 tags: [pendientes]
 fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 ---
 
 # Pendientes
 
-- **Pendiente:** verificar qué horarios, teléfonos, direcciones, EPS y servicios son vigentes y están autorizados para la landing; la información actual procede del código y no se corroboró contra fuentes aprobadas.
+- **Pendiente:** horarios y direcciones ya fueron confirmados por el propietario; falta validar vigencia de teléfonos/correos del volante, canal WhatsApp, servicios por sede y condiciones EPS/particulares antes de reflejarlos en la web.
 - **Pendiente:** revisar las imágenes y videos de `Docs/` individualmente y confirmar permisos de uso, especialmente si aparecen pacientes o menores.
 - **Observado en móvil (390 × 844):** no se desborda horizontalmente, pero la cabecera se ve apretada y el logotipo roto ocupa varias líneas. Puede revisarse junto con la sustitución del logo.
 - **Pendiente:** revisar el DOCX de membrete para extraer identidad y datos empresariales sin divulgar información privada.
@@ -28,4 +28,6 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Pendiente:** correo de privacidad, dirección/sede y contacto de Valledupar, enlaces de Maps/redes y existencia de testimonios autorizados.
 - **Pendiente por entrega posterior del propietario:** misión, visión y datos aprobados del equipo profesional.
 - **Preferencia/instrucción confirmada (2026-11-06):** recordar las preguntas pendientes 2–5 de [[plan-de-mejora]] al comenzar la Etapa 2; el propietario las responderá entonces.
-- **Pendiente del Paso 1:** identificar si `CARPETA NUEVO/FACHADA.jpeg` corresponde a Valledupar; asignar fotos/videos de actividades a sede y fecha, y confirmar autorizaciones antes de publicarlos.
+- **Pendiente del Paso 1:** asignar fotos/videos de actividades a sede y fecha, y confirmar autorizaciones antes de publicarlos. Las fachadas de Valledupar y Atánquez están identificadas en `Docs/`.
+- **Pendiente:** confirmar vigencia de teléfonos/correos hallados en el volante, si los números reciben WhatsApp y qué servicios del material gráfico corresponden a cada sede.
+- **Pendiente:** confirmar vigencia y autorización del dato profesional visible en una imagen del membrete antes de crear un perfil público.

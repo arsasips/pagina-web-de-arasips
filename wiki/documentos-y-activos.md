@@ -2,7 +2,7 @@
 tipo: catálogo
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-10-29
+actualizado: 2026-11-11
 tags: [fuentes, activos, Docs]
 fuentes: ["../Docs/ (originales empresariales; ignorados por Git)", "../src/data/mockData.ts"]
 ---
@@ -11,14 +11,14 @@ fuentes: ["../Docs/ (originales empresariales; ignorados por Git)", "../src/data
 
 `Docs/` es la fuente de originales. No se modifican ni se versionan en Git. El paquete recibido está bajo `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/`. Se conserva allí el ZIP `CARPETA NUEVO/arsas-ips---rehabilitación-y-educación-especial.zip`; no se extrae encima del proyecto existente. Sus entradas listadas coinciden con los archivos fuente principales del proyecto actual. No se encontraron copias de trabajo organizadas ni se crearon duplicados.
 
-Se generó y revisó visualmente una hoja de contacto con las 17 imágenes JPEG/PNG de `Docs/`. Se distinguen fachadas, piezas gráficas de servicios, fotos de actividades grupales con adultos y menores, y capturas de páginas. La hoja no permite leer todo el texto pequeño ni confirmar ubicación, fecha, consentimiento o autorización de cada imagen. Los videos no se reprodujeron. El DOCX tiene cuatro imágenes insertadas y ningún texto extraíble; la vista previa falló porque LibreOffice no está instalado en el entorno. Los archivos bajo `sesion 2` parecen ejemplos/referencias, no activos aprobados.
+Se generó y revisó visualmente una hoja de contacto con las 17 imágenes JPEG/PNG de `Docs/`. En una revisión ampliada de los volantes, fachadas y medios incrustados en el DOCX se pudieron leer datos que la hoja de contacto no mostraba: servicios, números y correos de contacto, dirección en la fachada de Valledupar y una credencial profesional. Los datos de la credencial no se repiten aquí porque su publicación requiere autorización. Los volantes y la fachada de Atánquez muestran servicios, pero no fechan su vigencia; los permisos de imágenes de personas siguen por confirmar. Los 23 videos no se reprodujeron. El DOCX tiene cuatro imágenes incrustadas y ningún texto editable extraíble; no se pudo renderizar el documento completo porque LibreOffice no está instalado. Los archivos bajo `sesion 2` parecen ejemplos/referencias, no activos aprobados.
 
 ## Identidad visual
 | Ruta relativa a `Docs/` | Categoría / descripción | Uso y pendientes |
 |---|---|---|
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/LOGO.jpeg` | Identidad visual; imagen revisada. Logotipo infantil multicolor con texto ARSAS. | Posible identidad institucional; revisar calidad/tamaño antes de publicar. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/PALETA DE COLORES.jpeg` | Identidad visual; imagen revisada, muestra gama de azules. | Contrastar con colores actuales azul/naranja/crema y confirmar paleta oficial. |
-| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/HOJA MEMBRETEADA ..docx` | Información empresarial/identidad; cuatro imágenes insertadas, sin texto extraíble. | No se pudo inspeccionar el diseño porque falta LibreOffice; privacidad y vigencia pendientes. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/HOJA MEMBRETEADA ..docx` | Membrete; contiene logo, banda gráfica y una imagen de credencial de una profesional con nombre, título y tarjeta profesional visibles. | El perfil aparece en la fuente, pero su vigencia y autorización para publicar nombre/credencial aún deben confirmarse. El documento completo no se pudo renderizar. |
 
 ## Fotos, referencias y archivos multimedia
 
@@ -26,9 +26,9 @@ La tabla siguiente inventaría el resto de los archivos originales por ruta comp
 
 | Ruta relativa a `Docs/` | Categoría / descripción comprobable | Uso / revisión pendiente |
 |---|---|---|
-| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/FACHADA SEDE ATANQUE.jpeg` | Instalaciones; la hoja de contacto muestra una fachada con letrero ARSAS. | Confirmar sede y fecha; revisar autorización de publicación. |
-| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/REHABILTACION.jpeg` | Pieza gráfica institucional/de servicios observada en la hoja de contacto. | Revisar texto completo, vigencia y autorización antes de reutilizar. |
-| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/WhatsApp Image 2026-10-01 at 1.39.15 PM.jpeg` | Pieza gráfica institucional/de servicios observada en la hoja de contacto. | Revisar texto completo y autorización antes de reutilizar. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/FACHADA SEDE ATANQUE.jpeg` | Foto real de la fachada de Atánquez; el letrero identifica ARSAS y lista fisiatría, neuropsicología, fisioterapia, fonoaudiología, terapia ocupacional y psicología. | La sede está identificada; confirmar fecha/estado actual y autorización de publicación. La lista visible debe contrastarse con la oferta vigente. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/REHABILTACION.jpeg` | Volante de rehabilitación integral: neuropediatría, neuropsicología, psicología, fonoaudiología, terapia ocupacional y fisioterapia. Imprime 322 499 3463, 310 560 6873, `arsasipsatanquez@gmail.com` y `arsasipsvalledupar@gmail.com`. | No distribuye claramente los servicios por sede ni especifica si los números aceptan WhatsApp. Confirmar vigencia antes de enlazarlos o publicar el volante. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/WhatsApp Image 2026-10-01 at 1.39.15 PM.jpeg` | Volante de salud mental: psiquiatría, medicina general, psicología, trabajo social, terapia ocupacional y fisioterapia. | No indica sede ni vigencia; contrastar con la lista actual del propietario antes de publicar. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/FONOAUDIOLIGIA.mp4` | Video de servicio según nombre; no reproducido. | Identificar contenido/personas y autorización. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/PSIQUIATRIA.mp4` | Video de servicio según nombre; no reproducido. | Identificar contenido/personas y autorización. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CONSULTORIO TERRAPIA FISICA.mp4` | Video de instalaciones/servicio según nombre; no reproducido. | Confirmar contenido y sede, permiso de publicación. |
@@ -37,7 +37,7 @@ La tabla siguiente inventaría el resto de los archivos originales por ruta comp
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/AREA ADMINISTRATIVA.mp4` | Video de instalaciones/equipo según nombre; no reproducido. | Revisar privacidad y permiso. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/VIDEO DE LA INSTALACION.mp4` | Video de instalaciones según nombre; no reproducido. | Confirmar sede, contenido y permiso. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/VIDEO FONOAUDIOLOGIA.mp4` | Video de servicio según nombre; no reproducido. | Identificar contenido/personas y autorización. |
-| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/FACHADA.jpeg` | Instalaciones; la hoja muestra fachada con letrero ARSAS, distinta de la imagen genérica del hero actual. | Confirmar sede, fecha y permiso; opción para imagen principal. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/FACHADA.jpeg` | Foto real de la fachada de Valledupar; el letrero muestra la dirección Carrera 17 # 13B bis-14, coherente con el dato confirmado por el propietario. | Sede y dirección identificadas. Confirmar vigencia y autorización antes de usarla en la página. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/IMAGEN 1.jpeg` | Actividad en espacio cerrado con menores y personal, observada en la hoja de contacto. | Consentimiento de imagen y permiso de publicación pendientes. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/IMAGEN 2.jpeg` | Fotografía grupal de una actividad/evento, observada en la hoja de contacto. | Revisar participantes y permisos antes de publicación. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/CARPETA NUEVO/IMAGEN 3.jpeg` | Actividad grupal con menores y adultos, observada en la hoja de contacto. | Consentimiento y autorización de publicación pendientes. |

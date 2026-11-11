@@ -2,7 +2,7 @@
 tipo: estado
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-11-06
+actualizado: 2026-11-11
 tags: [proyecto, estado]
 fuentes: ["../package.json", "../README.md", "../metadata.json"]
 ---
@@ -22,8 +22,8 @@ fuentes: ["../package.json", "../README.md", "../metadata.json"]
 - **Siguiente paso anterior (pendiente de validación):** revisar reemplazo de logos e imagen principal.
 - **Confirmado (2026-11-06):** revisado `PLAN DE MEJORA/25-centro-de-rehabilitacion-y-educacion-especial-arsas-ips-sas/`; contiene el checklist, ZIP de skills SEO y tratamiento de datos, documento de validación y mensaje modelo. Se creó [[plan-de-mejora]] con etapas adaptadas al código.
 - **Confirmado por el propietario (2026-11-06):** direcciones y horarios de ambas sedes: Atánquez, Carrera 4 # 6-52; Valledupar, Carrera 17 # 13B bis-14, Alfonso López. Los horarios detallados están en [[empresa]]. La web todavía no refleja esta información.
-- **Pendiente:** verificar si 322 499 3463 también es WhatsApp de Atánquez; teléfono/WhatsApp de Valledupar y Maps de ambas sedes.
+- **Pendiente:** verificar vigencia de los dos teléfonos y correos hallados en el volante, confirmar si los teléfonos reciben WhatsApp y obtener enlaces de Maps de ambas sedes.
 - **Pendiente:** validar servicios por sede, textos institucionales, perfiles, autorizaciones de imágenes/personas, actividades, enlaces sociales/Maps y datos de privacidad.
 - **Siguiente paso:** al comenzar la Etapa 2, recordar al propietario las preguntas pendientes 2–5 de [[plan-de-mejora]]; luego corregir los datos confirmados de contacto y sede.
 - **Actualización 2026-11-06:** el propietario confirmó la asignación de las direcciones y horarios a Atánquez y Valledupar. No se modificó la landing; quedan pendientes algunos canales y mapas.
-- **Confirmado (2026-11-06):** completada la auditoría del Paso 1 del checklist. El resultado por sede y las imágenes de ejemplo/no acreditadas están en [[plan-de-mejora]]. No se modificó el sitio; se marcó el paso como completado con pendientes explícitos.
+- **Confirmado (2026-11-11):** reexaminados directamente los volantes, fachadas y medios incrustados del membrete en `Docs/`; el inventario y el resultado actualizado por sede están en [[documentos-y-activos]] y [[plan-de-mejora]]. El Paso 1 sigue completado con hallazgos ampliados. No se modificó el sitio.

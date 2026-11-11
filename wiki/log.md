@@ -2,7 +2,7 @@
 tipo: registro
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-11-06
+actualizado: 2026-11-11
 tags: [log]
 fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 ---
@@ -61,3 +61,8 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Revisados el código de la landing y el inventario visual existente de `Docs/`; redactado el resultado por sede en [[plan-de-mejora]].
 - Identificada fachada rotulada para Atánquez; la fachada restante no está asignada a Valledupar. Registrados logos remotos rotos, imagen de portada no acreditada, fotos de stock en perfiles y ausencia de testimonios precargados.
 - Marcado el Paso 1 como completado en el checklist local, dejando pendientes de autorización, identificación y datos. No se modificó la página.
+
+## [2026-11-11] revisión | Hallazgos adicionales dentro de Docs
+- Reabiertos los volantes `REHABILTACION.jpeg` y `WhatsApp Image 2026-10-01 at 1.39.15 PM.jpeg`, ambas fachadas y los medios incrustados del membrete, tras la observación del propietario.
+- Encontrados teléfonos, correos de sede y listas adicionales de servicios en los volantes; la fachada de Valledupar muestra su dirección; el membrete incluye una credencial profesional. Actualizados [[documentos-y-activos]], [[empresa]] y [[plan-de-mejora]].
+- Corregida la nota del Paso 1; no se cambió la landing. Siguen pendientes vigencia, canal WhatsApp, distribución de servicios y permisos de publicación.
