@@ -72,3 +72,8 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Implementados selector inicial, cambio persistente de sede, sincronización de la vista Sedes, contactos y horarios por selección; corregidos datos anteriores en preguntas frecuentes.
 - `npm run lint` y `npm run build` pasan. No se pudo revisar visualmente: el navegador integrado no conecta con el servidor local.
 - No se realizó publicación ni envío de mensajes. Enlaces de Maps y distribución de servicios siguen pendientes.
+
+## [2026-11-11] soporte | Recuperar la vista previa local
+- Diagnóstico: procesos Vite anteriores de esta carpeta ocupaban 3000/3001 sin responder, por eso el navegador esperaba y los intentos adicionales cambiaban de puerto o fallaban.
+- Detenidos solo los dos procesos verificados como Vite de este proyecto; levantada una instancia limpia en 127.0.0.1:3000.
+- Comprobación HTTP local a http://127.0.0.1:3000/ respondió 200. No se completó revisión visual desde navegador.
