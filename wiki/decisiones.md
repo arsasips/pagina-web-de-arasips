@@ -40,3 +40,8 @@ fuentes: ["../AGENTS.md", "[[documentos-y-activos]]", "Propietario, respuestas e
 - **Decisión de implementación:** pedir selección de sede al ingresar, conservarla en el navegador y permitir cambiarla de forma visible. Dirección, horario y enlaces principales de contacto siguen la sede elegida; la vista “Sedes” actualiza la selección global.
 - **Motivo:** evita dirigir consultas al número de la otra ubicación y mostrar horarios incorrectos, sin afirmar aún la distribución específica de servicios.
 - **Fuentes:** respuesta del propietario en conversación 2026-11-11; [[empresa]], [[plan-de-mejora]].
+
+## 2026-11-11 — Usar la foto de fachada de Valledupar
+- **Confirmado por el propietario:** `Docs/.../CARPETA NUEVO/FACHADA.jpeg` corresponde a la sede Valledupar y debe usarse como fondo.
+- **Decisión de implementación:** preservar el original y copiar el archivo a `public/images/sede-valledupar-fachada.jpeg` para la página; conectarlo con el visual principal y las vistas de esa sede.
+- **Fuente:** propietario, respuesta en conversación 2026-11-11; [[documentos-y-activos]].

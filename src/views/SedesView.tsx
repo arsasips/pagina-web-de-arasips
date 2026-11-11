@@ -1,5 +1,5 @@
 import React from 'react';
-import { SEDES_DATA, CLINIC_FACADE_URL } from '../data/mockData';
+import { SEDES_DATA } from '../data/mockData';
 import { SedeName } from '../types';
 
 interface SedesViewProps {
@@ -64,7 +64,7 @@ export const SedesView: React.FC<SedesViewProps> = ({
         <div className="lg:col-span-6 flex flex-col gap-4">
           <div className="relative rounded-3xl overflow-hidden shadow-lg h-[340px] md:h-[400px]">
             <img
-              src={CLINIC_FACADE_URL}
+              src={sede.image}
               alt={sede.name}
               className="w-full h-full object-cover"
             />

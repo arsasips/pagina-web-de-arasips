@@ -77,3 +77,8 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Diagnóstico: procesos Vite anteriores de esta carpeta ocupaban 3000/3001 sin responder, por eso el navegador esperaba y los intentos adicionales cambiaban de puerto o fallaban.
 - Detenidos solo los dos procesos verificados como Vite de este proyecto; levantada una instancia limpia en 127.0.0.1:3000.
 - Comprobación HTTP local a http://127.0.0.1:3000/ respondió 200. No se completó revisión visual desde navegador.
+
+## [2026-11-11] activo | Fachada de Valledupar
+- El propietario identificó `Docs/.../CARPETA NUEVO/FACHADA.jpeg` como foto de la sede Valledupar e indicó usarla como fondo.
+- Revisada visualmente; copiada sin alterar a `public/images/sede-valledupar-fachada.jpeg`. El sitio la usa en el visual principal, la tarjeta y el detalle de Valledupar. Original conservado en Docs.
+- Actualizados [[documentos-y-activos]], [[estado-del-proyecto]], [[plan-de-mejora]] y [[decisiones]].

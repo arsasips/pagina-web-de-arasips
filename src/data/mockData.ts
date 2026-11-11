@@ -25,7 +25,7 @@ export const SEDES_DATA: Record<'valledupar' | 'atanquez', SedeInfo> = {
       'Rampa de acceso 100% universal y baños adaptados',
       'Parqueadero y zonas verdes de esparcimiento',
     ],
-    image: CLINIC_FACADE_URL,
+    image: '/images/sede-valledupar-fachada.jpeg',
     description:
       'Instalaciones modernas equipadas para rehabilitación neuromuscular, fonoaudiológica y neurocognitiva en el corazón de Valledupar.',
   },

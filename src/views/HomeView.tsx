@@ -131,9 +131,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-[#ebe8e0] transition-transform duration-500 hover:scale-[1.01]">
                 <img
-                  alt="Fachada y acceso accesible de ARSAS IPS"
+                  alt={`Fachada de ARSAS IPS, sede ${selectedSede}`}
                   className="w-full h-[360px] md:h-[420px] object-cover"
-                  src={CLINIC_FACADE_URL}
+                  src={SEDES_DATA[selectedSede === 'Valledupar' ? 'valledupar' : 'atanquez'].image}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#004786]/70 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 bg-[#fdf9f1]/90 backdrop-blur-md rounded-2xl p-4 shadow-lg flex items-center justify-between">
@@ -550,7 +550,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <img
                   alt="Sede Valledupar ARSAS IPS"
                   className="w-full h-full object-cover"
-                  src={CLINIC_FACADE_URL}
+                  src={SEDES_DATA.valledupar.image}
                 />
                 <div className="absolute top-4 left-4 bg-[#004786] text-white px-4 py-1 rounded-full text-xs uppercase font-bold tracking-wider">
                   Sede Principal

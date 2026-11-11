@@ -86,6 +86,7 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 - Preparar el logo de `Docs/` para web y reemplazar el logo externo roto una vez aprobada su versión.
 - Elegir fotos reales identificadas como Valledupar o Atánquez para portada y tarjetas. No publicar retratos ni escenas con personas/menores sin autorización comprobada.
 - **Criterio de cierre:** no hay imágenes externas rotas ni fotos de stock presentadas como equipo o sedes reales.
+- **Avance (2026-11-11):** el propietario identificó y autorizó para usar como fondo la foto `Docs/.../CARPETA NUEVO/FACHADA.jpeg` de Valledupar. Copiada a `public/images/sede-valledupar-fachada.jpeg` y conectada con la imagen principal, tarjeta de Valledupar y vista de detalle de la sede. El original permanece en Docs; reemplazo del logo y foto de Atánquez siguen pendientes.
 
 ### Etapa 4 · Alinear oferta, misión y visión
 
