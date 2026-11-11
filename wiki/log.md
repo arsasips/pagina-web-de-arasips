@@ -66,3 +66,9 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Reabiertos los volantes `REHABILTACION.jpeg` y `WhatsApp Image 2026-10-01 at 1.39.15 PM.jpeg`, ambas fachadas y los medios incrustados del membrete, tras la observación del propietario.
 - Encontrados teléfonos, correos de sede y listas adicionales de servicios en los volantes; la fachada de Valledupar muestra su dirección; el membrete incluye una credencial profesional. Actualizados [[documentos-y-activos]], [[empresa]] y [[plan-de-mejora]].
 - Corregida la nota del Paso 1; no se cambió la landing. Siguen pendientes vigencia, canal WhatsApp, distribución de servicios y permisos de publicación.
+
+## [2026-11-11] etapa | Paso 2: selección global de sede
+- Confirmados por el propietario los WhatsApp de ambas sedes y que los servicios varían por sede; lo no especificado queda pendiente en [[empresa]] y [[plan-de-mejora]].
+- Implementados selector inicial, cambio persistente de sede, sincronización de la vista Sedes, contactos y horarios por selección; corregidos datos anteriores en preguntas frecuentes.
+- `npm run lint` y `npm run build` pasan. No se pudo revisar visualmente: el navegador integrado no conecta con el servidor local.
+- No se realizó publicación ni envío de mensajes. Enlaces de Maps y distribución de servicios siguen pendientes.

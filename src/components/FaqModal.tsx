@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SEDES_DATA } from '../data/mockData';
+import { SedeName } from '../types';
 
 interface FaqModalProps {
   isOpen: boolean;
   onClose: () => void;
+  selectedSede: SedeName;
 }
 
-export const FaqModal: React.FC<FaqModalProps> = ({ isOpen, onClose }) => {
+export const FaqModal: React.FC<FaqModalProps> = ({ isOpen, onClose, selectedSede }) => {
   const [question, setQuestion] = useState('');
-  const [targetSede, setTargetSede] = useState<'valledupar' | 'atanquez'>('valledupar');
+  const [targetSede, setTargetSede] = useState<'valledupar' | 'atanquez'>(selectedSede === 'Valledupar' ? 'valledupar' : 'atanquez');
   const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    if (isOpen) setTargetSede(selectedSede === 'Valledupar' ? 'valledupar' : 'atanquez');
+  }, [isOpen, selectedSede]);
 
   if (!isOpen) return null;
 

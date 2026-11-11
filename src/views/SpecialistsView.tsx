@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { SPECIALISTS_DATA, SEDES_DATA } from '../data/mockData';
-import { Specialist } from '../types';
+import { Specialist, SedeName } from '../types';
 
 interface SpecialistsViewProps {
   onBookWithSpecialist: (specialist: Specialist) => void;
+  selectedSede: SedeName;
 }
 
 export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
   onBookWithSpecialist,
+  selectedSede,
 }) => {
-  const [selectedSedeFilter, setSelectedSedeFilter] = useState<'todos' | 'Valledupar' | 'Atánquez'>('todos');
+  const [selectedSedeFilter, setSelectedSedeFilter] = useState<'todos' | SedeName>(selectedSede);
   const [searchQuery, setSearchQuery] = useState('');
 
   const filtered = SPECIALISTS_DATA.filter((s) => {
@@ -167,7 +169,7 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
                 <span>Pedir Cita</span>
               </button>
               <a
-                href={`https://wa.me/${SEDES_DATA.valledupar.whatsappNumber}?text=Hola%20ARSAS%20IPS,%20deseo%20consultar%20disponibilidad%20con%20${encodeURIComponent(
+                href={`https://wa.me/${SEDES_DATA[selectedSede === 'Valledupar' ? 'valledupar' : 'atanquez'].whatsappNumber}?text=Hola%20ARSAS%20IPS,%20deseo%20consultar%20disponibilidad%20con%20${encodeURIComponent(
                   specialist.name
                 )}`}
                 target="_blank"

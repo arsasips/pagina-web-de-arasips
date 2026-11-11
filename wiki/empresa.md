@@ -13,9 +13,10 @@ fuentes: ["../index.html", "../src/data/mockData.ts", "[[documentos-y-activos]]"
 - **Confirmado por el propietario (2026-11-06):** nombre informado: «Centro Rehabilitación y Educación Especial ARSAS IPS»; NIT informado: `824003324-4`.
 - **Confirmado por el propietario (2026-11-06):** domicilio empresarial informado: Carrera 17 # 13B bis-14, barrio Alfonso López, asociado a la sede Valledupar según la confirmación posterior del propietario.
 - **Confirmado por el propietario (2026-11-06):** oferta de la empresa: terapia ocupacional, terapia física, fonoaudiología, trabajo social, fisiatría, psiquiatría, neuropediatría y psicología. La distribución por sede y las condiciones EPS/particulares están pendientes.
-- **Confirmado por el propietario (2026-11-06):** sede Atánquez, Carrera 4 # 6-52; lunes a jueves 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m.; viernes 7:00 a. m.–3:00 p. m.; teléfono `322 499 3463`. Que este teléfono sea también el WhatsApp queda por confirmar.
-- **Confirmado por el propietario (2026-11-06):** sede Valledupar, dirección Carrera 17 # 13B bis-14, barrio Alfonso López; lunes y martes 7:00 a. m.–12:30 p. m. y 2:00–5:00 p. m.; miércoles a viernes 7:00 a. m.–12:00 p. m. y 2:00–5:00 p. m. El volante de `Docs/` incluye el teléfono 310 560 6873 y un correo de sede; vigencia/canal y enlace de Maps pendientes.
-- **Encontrado en el volante `REHABILTACION.jpeg` de `Docs/`:** teléfonos impresos `322 499 3463` y `310 560 6873`, correos `arsasipsatanquez@gmail.com` y `arsasipsvalledupar@gmail.com`. El propietario confirmó el primer número para Atánquez; el código asocia el segundo a Valledupar. El volante no confirma si los números reciben WhatsApp ni si siguen vigentes. Los correos no se identifican como correo de privacidad.
+- **Confirmado por el propietario (2026-11-06):** sede Atánquez, Carrera 4 # 6-52; lunes a jueves 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m.; viernes 7:00 a. m.–3:00 p. m.; teléfono `322 499 3463`.
+- **Confirmado por el propietario (2026-11-06):** sede Valledupar, dirección Carrera 17 # 13B bis-14, barrio Alfonso López; lunes y martes 7:00 a. m.–12:30 p. m. y 2:00–5:00 p. m.; miércoles a viernes 7:00 a. m.–12:00 p. m. y 2:00–5:00 p. m.
+- **Confirmado por el propietario (2026-11-11):** ambos números de sede (`322 499 3463` Atánquez y `310 560 6873` Valledupar) reciben WhatsApp. Falta confirmar vigencia de teléfonos/correos y enlaces de Maps.
+- **Encontrado en el volante `REHABILTACION.jpeg` de `Docs/`:** teléfonos impresos `322 499 3463` y `310 560 6873`, correos `arsasipsatanquez@gmail.com` y `arsasipsvalledupar@gmail.com`. El propietario confirmó ambos números como WhatsApp; los correos no se identifican como correo de privacidad.
 - **Encontrado en material de `Docs/`:** la fachada de Atánquez y los volantes enumeran servicios. Una lista incluye salud mental y medicina general; difiere de la lista general que informó el propietario. Aclarar vigencia y sede de cada servicio antes de cambiar la web.
 - **Pendiente por entrega posterior del propietario:** misión, visión y datos de profesionales.
 - **Pendiente:** los servicios actuales del código no deben asumirse como aprobados; varios servicios informados ahora no aparecen allí.
@@ -23,7 +24,7 @@ fuentes: ["../index.html", "../src/data/mockData.ts", "[[documentos-y-activos]]"
 
 ## Público y canales
 - **Provisional:** familias, niños y adultos que buscan servicios de rehabilitación o educación especial en la zona, según el contenido de la landing.
-- **Pendiente:** confirmar WhatsApp de Atánquez, teléfono/WhatsApp y enlace Maps de Valledupar, enlaces Maps de ambas sedes, público prioritario, convenios y condiciones de atención.
+- **Pendiente:** distribución de servicios por sede (el propietario indicó que varían), enlaces Maps de ambas sedes, vigencia de los correos del volante, público prioritario, convenios y condiciones de atención.
 - **Provisional (código existente):** la página muestra botones de WhatsApp, teléfonos y un módulo de agendamiento. No se ha comprobado la recepción real de solicitudes ni autorización de los datos de contacto.
 
 ## Preferencias confirmadas

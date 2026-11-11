@@ -4,7 +4,7 @@ import {
   SEDES_DATA,
   CLINIC_FACADE_URL,
 } from '../data/mockData';
-import { ServiceItem, Testimonial, FaqItem, ActiveView } from '../types';
+import { ServiceItem, Testimonial, FaqItem, ActiveView, SedeName } from '../types';
 
 interface HomeViewProps {
   onOpenBooking: (serviceId?: string, sede?: 'Valledupar' | 'Atánquez') => void;
@@ -12,6 +12,8 @@ interface HomeViewProps {
   onOpenFaqModal: () => void;
   onOpenTestimonialModal: () => void;
   onNavigate: (view: ActiveView) => void;
+  selectedSede: SedeName;
+  onChangeSede: () => void;
   testimonials: Testimonial[];
   faqs: FaqItem[];
 }
@@ -22,6 +24,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
   onOpenFaqModal,
   onOpenTestimonialModal,
   onNavigate,
+  selectedSede,
+  onChangeSede,
   testimonials,
   faqs,
 }) => {
@@ -81,27 +85,26 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 {/* Valledupar CTA */}
                 <a
                   className="flex items-center justify-center gap-2.5 bg-[#fc9427] hover:bg-[#e57f15] text-white px-6 py-3.5 rounded-full shadow-[0_8px_24px_rgba(252,148,39,0.36)] transition-all duration-300 transform hover:-translate-y-1 group"
-                  href={`https://wa.me/${SEDES_DATA.valledupar.whatsappNumber}?text=Hola%20ARSAS%20IPS,%20deseo%20información%20o%20agendar%20cita%20en%20Valledupar`}
+                  href={`https://wa.me/${SEDES_DATA[selectedSede === 'Valledupar' ? 'valledupar' : 'atanquez'].whatsappNumber}?text=${encodeURIComponent(`Hola ARSAS IPS, deseo información o agendar cita en ${selectedSede}`)}`}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <svg className="w-5 h-5 fill-current text-white shrink-0" viewBox="0 0 24 24">
                     <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.68-1.4 1.25-1.94 1.33-.5.08-1.14.12-3.32-.78-2.6-1.07-4.29-3.71-4.42-3.89-.13-.18-1.05-1.4-1.05-2.67 0-1.27.67-1.89.9-2.15.24-.26.52-.33.7-.33.18 0 .35 0 .5.01.17.01.39-.06.6.46.23.55.78 1.9.85 2.04.07.15.11.32.02.5-.09.19-.14.3-.28.46-.14.17-.3.37-.43.5-.14.14-.29.3-.13.57.17.27.73 1.2 1.57 1.94 1.08.96 1.99 1.26 2.27 1.4.28.14.45.12.62-.07.17-.2.72-.84.92-1.13.19-.28.39-.24.65-.14.26.09 1.66.78 1.95.92.28.15.48.22.55.34.07.13.07.74-.17 1.42z" />
                   </svg>
-                  <span className="text-base font-bold">Escribir a Valledupar</span>
+                  <span className="text-base font-bold">Escribir a {selectedSede}</span>
                 </a>
 
-                {/* Atánquez CTA */}
+                {/* Selector visible de sede */}
                 <a
                   className="flex items-center justify-center gap-2.5 bg-[#fc9427] hover:bg-[#e57f15] text-white px-6 py-3.5 rounded-full shadow-[0_8px_24px_rgba(252,148,39,0.36)] transition-all duration-300 transform hover:-translate-y-1 group"
-                  href={`https://wa.me/${SEDES_DATA.atanquez.whatsappNumber}?text=Hola%20ARSAS%20IPS,%20deseo%20información%20o%20agendar%20cita%20en%20Atánquez`}
-                  rel="noopener noreferrer"
-                  target="_blank"
+                  href="#sedes"
+                  onClick={(event) => { event.preventDefault(); onChangeSede(); }}
                 >
                   <svg className="w-5 h-5 fill-current text-white shrink-0" viewBox="0 0 24 24">
                     <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.68-1.4 1.25-1.94 1.33-.5.08-1.14.12-3.32-.78-2.6-1.07-4.29-3.71-4.42-3.89-.13-.18-1.05-1.4-1.05-2.67 0-1.27.67-1.89.9-2.15.24-.26.52-.33.7-.33.18 0 .35 0 .5.01.17.01.39-.06.6.46.23.55.78 1.9.85 2.04.07.15.11.32.02.5-.09.19-.14.3-.28.46-.14.17-.3.37-.43.5-.14.14-.29.3-.13.57.17.27.73 1.2 1.57 1.94 1.08.96 1.99 1.26 2.27 1.4.28.14.45.12.62-.07.17-.2.72-.84.92-1.13.19-.28.39-.24.65-.14.26.09 1.66.78 1.95.92.28.15.48.22.55.34.07.13.07.74-.17 1.42z" />
                   </svg>
-                  <span className="text-base font-bold">Escribir a Atánquez</span>
+                  <span className="text-base font-bold">Cambiar sede</span>
                 </a>
               </div>
 
@@ -310,7 +313,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       </button>
                       <a
                         className="flex items-center justify-center gap-2 bg-[#fc9427] hover:bg-[#e57f15] text-white px-6 py-3 rounded-full shadow-[0_4px_16px_rgba(252,148,39,0.32)] text-sm font-bold transition-all"
-                        href={`https://wa.me/${SEDES_DATA.valledupar.whatsappNumber}?text=${encodeURIComponent(
+                        href={`https://wa.me/${SEDES_DATA[selectedSede === 'Valledupar' ? 'valledupar' : 'atanquez'].whatsappNumber}?text=${encodeURIComponent(
                           srv.whatsappText
                         )}`}
                         rel="noopener noreferrer"
@@ -351,7 +354,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <div className="pt-6 mt-4 flex flex-col gap-2">
                     <a
                       className="w-full flex items-center justify-center gap-2 bg-[#fc9427] hover:bg-[#e57f15] text-white px-4 py-2.5 rounded-full shadow-[0_4px_16px_rgba(252,148,39,0.28)] text-xs font-bold transition-all"
-                      href={`https://wa.me/${SEDES_DATA.valledupar.whatsappNumber}?text=${encodeURIComponent(
+                      href={`https://wa.me/${SEDES_DATA[selectedSede === 'Valledupar' ? 'valledupar' : 'atanquez'].whatsappNumber}?text=${encodeURIComponent(
                         srv.whatsappText
                       )}`}
                       rel="noopener noreferrer"
@@ -575,7 +578,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       </span>
                       <div>
                         <p className="text-[#1c1c17] font-semibold">Recepción de documentos:</p>
-                        <p>{SEDES_DATA.valledupar.receptionSchedule}</p>
+                        <p>{SEDES_DATA.valledupar.schedule}</p>
                       </div>
                     </div>
 
@@ -585,7 +588,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       </span>
                       <div>
                         <p className="text-[#1c1c17] font-semibold">Tarde:</p>
-                        <p>{SEDES_DATA.valledupar.afternoonSchedule}</p>
+                        <p>WhatsApp: {SEDES_DATA.valledupar.whatsappFormatted}</p>
                       </div>
                     </div>
                   </div>
@@ -646,7 +649,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       </span>
                       <div>
                         <p className="text-[#1c1c17] font-semibold">Horario de atención:</p>
-                        <p>{SEDES_DATA.atanquez.receptionSchedule}</p>
+                        <p>{SEDES_DATA.atanquez.schedule}</p>
                       </div>
                     </div>
 
@@ -656,7 +659,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       </span>
                       <div>
                         <p className="text-[#1c1c17] font-semibold">Atención telefónica y digital:</p>
-                        <p>{SEDES_DATA.atanquez.afternoonSchedule}</p>
+                        <p>WhatsApp: {SEDES_DATA.atanquez.whatsappFormatted}</p>
                       </div>
                     </div>
                   </div>

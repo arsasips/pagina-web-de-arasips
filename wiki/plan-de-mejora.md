@@ -15,7 +15,7 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 
 - **Confirmado:** la web es una aplicación React + TypeScript + Vite con inicio, servicios, sedes, profesionales, citas y portal. Hay dos sedes y botones/enlaces de WhatsApp distintos en el código.
 - **Confirmado por el propietario (2026-11-06):** nombre informado, NIT `824003324-4`, domicilio empresarial Carrera 17 # 13B bis-14, barrio Alfonso López y lista general de ocho servicios. La dirección corresponde a Valledupar; la asignación de servicios y las condiciones EPS/particulares están pendientes.
-- **Confirmado por el propietario (2026-11-06):** Atánquez corresponde a Carrera 4 # 6-52, horario lunes a jueves 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m., viernes 7:00 a. m.–3:00 p. m., teléfono 322 499 3463. Falta confirmar si también es WhatsApp.
+- **Confirmado por el propietario (2026-11-11):** ambos teléfonos por sede reciben WhatsApp: 322 499 3463 Atánquez y 310 560 6873 Valledupar.
 - **Confirmado por el propietario (2026-11-06):** Valledupar corresponde a Carrera 17 # 13B bis-14, barrio Alfonso López. Horario: lunes y martes 7:00 a. m.–12:30 p. m. y 2:00–5:00 p. m.; miércoles a viernes 7:00 a. m.–12:00 p. m. y 2:00–5:00 p. m.
 - **Encontrado en `Docs/REHABILTACION.jpeg`:** el volante incluye los números 322 499 3463 y 310 560 6873 y correos por sede. El código los enlaza a WhatsApp; el volante por sí solo no confirma que ambos números reciban WhatsApp ni que sigan vigentes. Los enlaces Maps de las dos sedes siguen pendientes.
 - **Observado:** el logo y la foto principal usan enlaces externos de Google que fallan en la vista local revisada. Ambas tarjetas de sede reutilizan esa foto. Las fotos de perfiles son de Unsplash y no prueban la identidad de profesionales reales.
@@ -52,11 +52,11 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 
 ## Preguntas para cerrar la validación
 
-1. **Parcialmente respondida:** direcciones y horarios confirmados; `Docs/` contiene dos teléfonos y dos correos por sede. Quedan por confirmar vigencia y uso de WhatsApp, además de los enlaces Maps.
-2. ¿Cómo se reparten los ocho servicios entre las sedes? ¿Atienden particulares además de EPS y qué deben hacer para pedir información?
-3. Queda pendiente para cuando la tengas: misión/visión aprobadas y perfiles profesionales vigentes y autorizados.
-4. Entiendo que respondiste que sí hay autorización para material de actividades. ¿Incluye cada foto/video y, si salen menores, autorización de acudiente? ¿Cada cuánto son las actividades y cuál es la próxima fecha confirmada?
-5. Para cerrar: ¿cuál es el correo de privacidad, las URL de redes oficiales y hay testimonios reales autorizados? El nombre y NIT ya quedaron registrados como informados por ti.
+1. **Respondida parcialmente (2026-11-11):** ambos números reciben WhatsApp. Enlaces de Maps aún pendientes.
+2. **Respondida parcialmente:** los servicios varían por sede. Falta indicar cuáles corresponden a cada una y si atienden particulares además de EPS, y qué deben hacer para pedir información.
+3. **Pospuesta por el propietario:** compartirá después misión/visión aprobadas y perfiles profesionales vigentes y autorizados.
+4. **Pendiente de concretar:** el propietario indicó que tiene los datos de actividades. Falta compartir frecuencia, próxima fecha y permisos específicos por foto/video (incluidos permisos de acudientes cuando corresponda).
+5. **Pendiente de compartir:** el propietario indicó que tiene los datos de privacidad/redes/testimonios. Faltan el correo de privacidad, URL oficiales y confirmar testimonios autorizados.
 
 ## Etapas
 
@@ -78,6 +78,8 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 - Cuando se confirmen, actualizar dirección, horario, WhatsApp, teléfono y Maps en el contenido centralizado y en todas las zonas visibles (inicio, sedes, pie, preguntas frecuentes y accesos de contacto).
 - Asegurar que la selección/cambio de sede mantenga juntos todos sus datos sin cruces y que la sede elegida se recuerde de manera comprensible.
 - **Criterio de cierre:** enlaces y datos coinciden entre toda la landing y se abren a la sede correcta.
+- **Implementación local lista (2026-11-11):** se añadió selector inicial y control persistente para cambiar sede; dirección, horario y WhatsApp seleccionados se enlazan en cabecera, accesos de contacto, sedes, preguntas frecuentes y pie. `Sedes` sincroniza la selección global y queda recordada en este navegador. Ambos números fueron confirmados como WhatsApp. La página ya informa que la oferta cambia por sede, sin afirmar disponibilidad no confirmada.
+- **Pendiente para cerrar la etapa:** enlaces de Maps cuando se compartan y revisión visual directa en navegador (limitada durante esta sesión por bloqueo de conexión local del navegador integrado).
 
 ### Etapa 3 · Sustituir activos de muestra por identidad y fotos propias
 
@@ -130,4 +132,4 @@ Este plan adapta el checklist recibido al código que existe y a las fuentes rev
 
 ## Siguiente paso
 
-Al comenzar la Etapa 2, recordar las preguntas pendientes 2–5 al propietario, según pidió el 2026-11-06. Antes de modificar datos de contacto, confirmar los teléfonos/WhatsApp y Maps que aún faltan. Véanse [[pendientes]], [[empresa]] y [[documentos-y-activos]].
+Siguiente: validar la vista local si el navegador integrado permite abrir el servidor; luego pedir los enlaces Maps. Más adelante, cuando el propietario comparta los datos que indicó tener, actualizar preguntas 2–5 y continuar oferta por sede, equipo, actividades y privacidad. Véanse [[pendientes]], [[empresa]] y [[documentos-y-activos]].

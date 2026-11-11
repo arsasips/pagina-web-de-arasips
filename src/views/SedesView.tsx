@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SEDES_DATA, CLINIC_FACADE_URL } from '../data/mockData';
+import { SedeName } from '../types';
 
 interface SedesViewProps {
-  onOpenBookingForSede: (sede: 'Valledupar' | 'Atánquez') => void;
+  selectedSede: SedeName;
+  onSelectSede: (sede: SedeName) => void;
+  onOpenBookingForSede: (sede: SedeName) => void;
 }
 
 export const SedesView: React.FC<SedesViewProps> = ({
   onOpenBookingForSede,
+  selectedSede,
+  onSelectSede,
 }) => {
-  const [activeTab, setActiveTab] = useState<'valledupar' | 'atanquez'>('valledupar');
+  const activeTab = selectedSede === 'Valledupar' ? 'valledupar' : 'atanquez';
   const sede = SEDES_DATA[activeTab];
 
   return (
@@ -29,7 +34,7 @@ export const SedesView: React.FC<SedesViewProps> = ({
         {/* Tab switch */}
         <div className="flex items-center justify-center gap-2 pt-4">
           <button
-            onClick={() => setActiveTab('valledupar')}
+            onClick={() => onSelectSede('Valledupar')}
             className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold transition-all ${
               activeTab === 'valledupar'
                 ? 'bg-[#004786] text-white shadow-md'
@@ -40,7 +45,7 @@ export const SedesView: React.FC<SedesViewProps> = ({
             <span>Sede Valledupar (Principal)</span>
           </button>
           <button
-            onClick={() => setActiveTab('atanquez')}
+            onClick={() => onSelectSede('Atánquez')}
             className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold transition-all ${
               activeTab === 'atanquez'
                 ? 'bg-[#004786] text-white shadow-md'
@@ -83,23 +88,23 @@ export const SedesView: React.FC<SedesViewProps> = ({
             <div className="bg-[#fdf9f1] p-4 rounded-2xl border border-[#1c1c17]/5 flex flex-col gap-1">
               <div className="flex items-center gap-2 text-[#004786] text-xs font-bold">
                 <span className="material-symbols-outlined text-[18px]">event_available</span>
-                <span>Recepción de Órdenes</span>
+                <span>Horario de atención</span>
               </div>
               <p className="text-xs text-[#1c1c17] font-semibold mt-1">
-                {sede.receptionSchedule}
+                {sede.schedule}
               </p>
-              <p className="text-[11px] text-[#727782]">Presencial en ventanilla de admisiones</p>
+              <p className="text-[11px] text-[#727782]">Horario informado para esta sede</p>
             </div>
 
             <div className="bg-[#fdf9f1] p-4 rounded-2xl border border-[#1c1c17]/5 flex flex-col gap-1">
               <div className="flex items-center gap-2 text-[#fc9427] text-xs font-bold">
                 <span className="material-symbols-outlined text-[18px]">chat</span>
-                <span>Atención Digital & Tarde</span>
+                <span>Contacto por WhatsApp</span>
               </div>
               <p className="text-xs text-[#1c1c17] font-semibold mt-1">
-                {sede.afternoonSchedule}
+                WhatsApp: {sede.whatsappFormatted}
               </p>
-              <p className="text-[11px] text-[#727782]">Canal directo de WhatsApp</p>
+              <p className="text-[11px] text-[#727782]">Escríbenos para consultar</p>
             </div>
           </div>
         </div>

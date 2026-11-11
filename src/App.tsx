@@ -11,6 +11,7 @@ import { BookingModal } from './components/BookingModal';
 import { ServiceDetailModal } from './components/ServiceDetailModal';
 import { TestimonialModal } from './components/TestimonialModal';
 import { FaqModal } from './components/FaqModal';
+import { SedeSelectorModal } from './components/SedeSelectorModal';
 
 import { HomeView } from './views/HomeView';
 import { SpecialistsView } from './views/SpecialistsView';
@@ -29,10 +30,23 @@ import {
   Specialist,
   Testimonial,
   AppointmentRecord,
+  SedeName,
 } from './types';
+
+const getSavedSede = (): SedeName | null => {
+  try {
+    const savedSede = localStorage.getItem('arsas_selected_sede');
+    return savedSede === 'Valledupar' || savedSede === 'Atánquez' ? savedSede : null;
+  } catch {
+    return null;
+  }
+};
 
 export default function App() {
   const [activeView, setActiveView] = useState<ActiveView>('inicio');
+  const [selectedSede, setSelectedSede] = useState<SedeName | null>(getSavedSede);
+  const [isSedeSelectorOpen, setIsSedeSelectorOpen] = useState(() => getSavedSede() === null);
+  const activeSede = selectedSede ?? 'Valledupar';
 
   // Appointments state with LocalStorage persistence
   const [appointments, setAppointments] = useState<AppointmentRecord[]>(() => {
@@ -100,9 +114,19 @@ export default function App() {
     }, 4500);
   };
 
-  const handleOpenBooking = (serviceId?: string, sede?: 'Valledupar' | 'Atánquez') => {
+  const handleSelectSede = (sede: SedeName) => {
+    setSelectedSede(sede);
+    try {
+      localStorage.setItem('arsas_selected_sede', sede);
+    } catch {
+      // The current tab still keeps the selected location in React state.
+    }
+    setIsSedeSelectorOpen(false);
+  };
+
+  const handleOpenBooking = (serviceId?: string, sede?: SedeName) => {
     setBookingServiceId(serviceId);
-    setBookingSede(sede);
+    setBookingSede(sede ?? activeSede);
     setIsBookingOpen(true);
   };
 
@@ -111,7 +135,8 @@ export default function App() {
     const matchingService = SERVICES_DATA.find((s) =>
       specialist.specialty.toLowerCase().includes(s.name.toLowerCase().slice(0, 5))
     );
-    handleOpenBooking(matchingService?.id, specialist.sedes[0]);
+    const sede = specialist.sedes.includes(activeSede) ? activeSede : specialist.sedes[0];
+    handleOpenBooking(matchingService?.id, sede);
   };
 
   const handleAppointmentCreated = (newAppt: AppointmentRecord) => {
@@ -145,6 +170,8 @@ export default function App() {
       {/* Main Navbar */}
       <Navbar
         activeView={activeView}
+        selectedSede={activeSede}
+        onChangeSede={() => setIsSedeSelectorOpen(true)}
         setActiveView={setActiveView}
         onOpenBooking={() => handleOpenBooking()}
       />
@@ -161,6 +188,8 @@ export default function App() {
               setActiveView(view);
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
+            selectedSede={activeSede}
+            onChangeSede={() => setIsSedeSelectorOpen(true)}
             testimonials={testimonials}
             faqs={FAQS_DATA}
           />
@@ -176,6 +205,8 @@ export default function App() {
               setActiveView(view);
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
+            selectedSede={activeSede}
+            onChangeSede={() => setIsSedeSelectorOpen(true)}
             testimonials={testimonials}
             faqs={FAQS_DATA}
           />
@@ -183,12 +214,14 @@ export default function App() {
 
         {activeView === 'sedes' && (
           <SedesView
+            selectedSede={activeSede}
+            onSelectSede={handleSelectSede}
             onOpenBookingForSede={(sede) => handleOpenBooking(undefined, sede)}
           />
         )}
 
         {activeView === 'especialistas' && (
-          <SpecialistsView onBookWithSpecialist={handleBookWithSpecialist} />
+          <SpecialistsView selectedSede={activeSede} onBookWithSpecialist={handleBookWithSpecialist} />
         )}
 
         {activeView === 'portal' && (
@@ -200,10 +233,11 @@ export default function App() {
       </main>
 
       {/* Persistent Floating WhatsApp widget with Branch Picker */}
-      <FloatingWhatsApp />
+      <FloatingWhatsApp selectedSede={activeSede} onChangeSede={() => setIsSedeSelectorOpen(true)} />
 
       {/* Footer */}
       <Footer
+        selectedSede={activeSede}
         onNavigate={(view) => {
           setActiveView(view);
           window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -222,6 +256,7 @@ export default function App() {
 
       <ServiceDetailModal
         service={selectedServiceDetail}
+        selectedSede={activeSede}
         onClose={() => setSelectedServiceDetail(null)}
         onBookService={(srvId) => {
           setSelectedServiceDetail(null);
@@ -235,7 +270,15 @@ export default function App() {
         onSubmit={handleTestimonialCreated}
       />
 
-      <FaqModal isOpen={isFaqOpen} onClose={() => setIsFaqOpen(false)} />
+      <FaqModal isOpen={isFaqOpen} onClose={() => setIsFaqOpen(false)} selectedSede={activeSede} />
+
+      <SedeSelectorModal
+        isOpen={!selectedSede || isSedeSelectorOpen}
+        required={!selectedSede}
+        selectedSede={selectedSede}
+        onClose={() => setIsSedeSelectorOpen(false)}
+        onSelect={handleSelectSede}
+      />
     </div>
   );
 }

@@ -1,13 +1,16 @@
 import React from 'react';
 import { CLINIC_LOGO_URL } from '../data/mockData';
 import { ActiveView } from '../types';
+import { getSedeInfo } from '../data/mockData';
 
 interface FooterProps {
   onNavigate: (view: ActiveView) => void;
   onOpenBooking: () => void;
+  selectedSede: 'Valledupar' | 'Atánquez';
 }
 
-export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenBooking }) => {
+export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenBooking, selectedSede }) => {
+  const sede = getSedeInfo(selectedSede);
   return (
     <footer className="w-full bg-[#f7f3eb] border-t border-[#1c1c17]/5 mt-20 py-12">
       <div className="max-w-[1240px] mx-auto px-4 md:px-8">
@@ -48,7 +51,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenBooking }) => 
                 <span className="material-symbols-outlined text-[18px]">photo_camera</span>
               </a>
               <a
-                href="https://wa.me/573105606873"
+                href={`https://wa.me/${sede.whatsappNumber}`}
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded-full bg-[#fc9427] text-white flex items-center justify-center hover:bg-[#e57f15] transition-colors shadow-sm"
@@ -65,25 +68,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenBooking }) => 
               Líneas de Atención
             </h4>
             <div className="flex flex-col gap-3 text-sm text-[#424751]">
-              <div>
-                <p className="font-semibold text-[#1c1c17]">Sede Valledupar:</p>
-                <a
-                  className="hover:text-[#004786] font-medium transition-colors"
-                  href="tel:+573105606873"
-                >
-                  +57 310 560 6873
-                </a>
-                <p className="text-xs text-[#727782]">Carrera 15 # 13C - 42, Barrio Obrero</p>
-              </div>
-              <div>
-                <p className="font-semibold text-[#1c1c17]">Sede Atánquez:</p>
-                <a
-                  className="hover:text-[#004786] font-medium transition-colors"
-                  href="tel:+573224993463"
-                >
-                  +57 322 499 3463
-                </a>
-                <p className="text-xs text-[#727782]">Calle 4 # 6-18, Corregimiento de Atánquez</p>
+              <div><p className="font-semibold text-[#1c1c17]">Sede {selectedSede}:</p>
+                <a className="hover:text-[#004786] font-medium transition-colors" href={`tel:+${sede.whatsappNumber}`}>{sede.whatsappFormatted}</a>
+                <p className="text-xs text-[#727782]">{sede.address}</p>
               </div>
             </div>
           </div>
@@ -93,17 +80,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenBooking }) => 
             <h4 className="text-xs uppercase font-bold text-[#004786] tracking-wider mb-1">
               Horarios de Atención
             </h4>
-            <div className="flex flex-col gap-2 text-sm text-[#424751]">
-              <div>
-                <strong className="text-[#1c1c17] font-semibold block">Sede Valledupar:</strong>
-                <p>Mañana (Recepción): 7:00 a. m. – 12:00 m.</p>
-                <p>Tarde (Solo WhatsApp): 2:00 p. m. – 4:00 p. m.</p>
-              </div>
-              <div className="pt-1">
-                <strong className="text-[#1c1c17] font-semibold block">Sede Atánquez:</strong>
-                <p>Lunes a Viernes: 7:30 a. m. – 3:00 p. m.</p>
-              </div>
-            </div>
+            <div className="flex flex-col gap-2 text-sm text-[#424751]"><strong className="text-[#1c1c17] font-semibold block">Sede {selectedSede}:</strong><p>{sede.schedule}</p></div>
           </div>
 
           {/* Col 4: Especialidades y Accesos */}

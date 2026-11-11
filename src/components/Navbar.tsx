@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import { CLINIC_LOGO_URL } from '../data/mockData';
-import { ActiveView } from '../types';
+import { ActiveView, SedeName } from '../types';
 
 interface NavbarProps {
   activeView: ActiveView;
   setActiveView: (view: ActiveView) => void;
   onOpenBooking: () => void;
+  selectedSede: SedeName;
+  onChangeSede: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   activeView,
   setActiveView,
   onOpenBooking,
+  selectedSede,
+  onChangeSede,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -100,6 +104,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Action Controls */}
         <div className="flex items-center gap-2.5 sm:gap-3">
+          <button onClick={onChangeSede} className="hidden sm:inline-flex items-center gap-1 rounded-full border border-[#004786]/20 px-3 py-2 text-xs font-bold text-[#004786] hover:bg-[#004786]/5" aria-label={`Cambiar sede, seleccionada ${selectedSede}`}>
+            <span className="material-symbols-outlined text-[17px]">location_on</span>
+            <span>Sede {selectedSede}</span><span className="underline">Cambiar</span>
+          </button>
           {/* Agendar Online Trigger */}
           <button
             onClick={onOpenBooking}
@@ -112,7 +120,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Quick WhatsApp Pill (Matching Original Design) */}
           <a
             className="flex items-center gap-1.5 bg-[#fc9427] hover:bg-[#e57f15] text-white px-3.5 md:px-4 py-2 rounded-full shadow-[0_4px_16px_rgba(252,148,39,0.32)] transition-all transform hover:-translate-y-0.5"
-            href="https://wa.me/573105606873"
+            href={`https://wa.me/${selectedSede === 'Valledupar' ? '573105606873' : '573224993463'}`}
             rel="noopener noreferrer"
             target="_blank"
             title="Escríbenos por WhatsApp"

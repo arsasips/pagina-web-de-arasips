@@ -9,7 +9,7 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 
 # Pendientes
 
-- **Pendiente:** horarios y direcciones ya fueron confirmados por el propietario; falta validar vigencia de teléfonos/correos del volante, canal WhatsApp, servicios por sede y condiciones EPS/particulares antes de reflejarlos en la web.
+- **Pendiente:** horarios y direcciones están confirmados. El propietario confirmó que ambos números publicados reciben WhatsApp y que los servicios varían por sede. Falta detallar la distribución y aclarar condiciones EPS/particulares; enlaces Maps y vigencia de correos también pendientes.
 - **Pendiente:** revisar las imágenes y videos de `Docs/` individualmente y confirmar permisos de uso, especialmente si aparecen pacientes o menores.
 - **Observado en móvil (390 × 844):** no se desborda horizontalmente, pero la cabecera se ve apretada y el logotipo roto ocupa varias líneas. Puede revisarse junto con la sustitución del logo.
 - **Pendiente:** revisar el DOCX de membrete para extraer identidad y datos empresariales sin divulgar información privada.
@@ -19,11 +19,12 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Confirmado:** dependencias instaladas y `package-lock.json` creado. `npm run lint` y `npm run build` pasaron.
 - **Confirmado:** el commit inicial ya está en el repositorio público `arsasips/pagina-web-de-arasips`, rama `main`.
 - **Resuelto parcialmente (2026-11-06):** el propietario confirmó dirección y horarios de Atánquez y Valledupar. La web aún contiene valores anteriores y no se ha actualizado.
-- **Pendiente:** confirmar si el teléfono 322 499 3463 de Atánquez es también su WhatsApp; pedir teléfono/WhatsApp de Valledupar y enlaces de Maps de ambas sedes.
-- **Pendiente:** confirmar WhatsApp/teléfonos actuales, perfiles y credenciales, redes, textos de misión/visión, servicios por sede y condiciones para particulares.
+- **Resuelto (2026-11-11):** ambos números del volante reciben WhatsApp: 322 499 3463 Atánquez y 310 560 6873 Valledupar. Falta verificar recepción real si el usuario lo solicita.
+- **Pendiente:** enlaces de Maps de ambas sedes y vigencia de los correos del volante.
+- **Pendiente:** validar perfiles y credenciales, redes, textos de misión/visión, distribución exacta de servicios por sede y condiciones para particulares.
 - **Pendiente:** identificar sede/fecha y autorización de fotos y videos de `Docs/`, con atención a personas menores; confirmar enlaces Maps y redes oficiales.
 - **Pendiente:** contestar las cinco preguntas de [[plan-de-mejora]] antes de implementar cambios empresariales.
-- **Confirmado por el propietario (2026-11-06):** nombre de empresa, NIT, domicilio empresarial informado, lista general de servicios y un conjunto de datos de dirección/horario/teléfono. La asignación a sedes y el segundo conjunto de contacto requieren aclaración; detalles en [[empresa]].
+- **Confirmado por el propietario (2026-11-06):** nombre de empresa, NIT, domicilio empresarial informado, lista general de servicios y datos de dirección/horarios por sede. El propietario confirmó el 2026-11-11 que ambos números reciben WhatsApp; los detalles están en [[empresa]].
 - **Pendiente:** para usar imágenes de actividades, precisar el alcance del “sí” recibido: autorización por pieza y permisos de acudientes cuando aparecen menores; confirmar frecuencia y próxima fecha.
 - **Pendiente:** correo de privacidad, dirección/sede y contacto de Valledupar, enlaces de Maps/redes y existencia de testimonios autorizados.
 - **Pendiente por entrega posterior del propietario:** misión, visión y datos aprobados del equipo profesional.

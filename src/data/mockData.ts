@@ -1,4 +1,4 @@
-import { ServiceItem, Specialist, SedeInfo, Testimonial, FaqItem, AppointmentRecord } from '../types';
+import { ServiceItem, Specialist, SedeInfo, SedeName, Testimonial, FaqItem, AppointmentRecord } from '../types';
 
 export const CLINIC_LOGO_URL =
   'https://lh3.googleusercontent.com/aida/AEtjO1U4ES9cKF5FltLJcdExb-E1aSRjywK3gzz1oh_zOAqKWLdFQ_5chGi8S4oCiLi3RGvLLvf-GgnazeBZ0tOodioxH9puvZMhKdCL_a63BApQ8Yz7WppDaO6uytlOc9UfO5Y3beg5iNLzM_BYLakiRfQll3lVZqkwS2wG5_7V8qJKJvuBD8ZxrUxCQIF2EMSVD4hgbrdzBz0rP2Rb7JI_E83Pd1nBp1zCYYIUA_AwIg0';
@@ -11,9 +11,9 @@ export const SEDES_DATA: Record<'valledupar' | 'atanquez', SedeInfo> = {
     id: 'valledupar',
     name: 'Sede Valledupar',
     badge: 'Sede Principal',
-    address: 'Carrera 15 # 13C - 42, Barrio Obrero, Valledupar, Cesar',
-    receptionSchedule: '7:00 a. m. – 12:00 m.',
-    afternoonSchedule: 'Atención solo por WhatsApp de 2:00 p. m. a 4:00 p. m.',
+    address: 'Carrera 17 # 13B bis-14, barrio Alfonso López, Valledupar, Cesar',
+    schedule:
+      'Lunes y martes: 7:00 a. m.–12:30 p. m. y 2:00–5:00 p. m. Miércoles a viernes: 7:00 a. m.–12:00 p. m. y 2:00–5:00 p. m.',
     whatsappNumber: '573105606873',
     whatsappFormatted: '+57 310 560 6873',
     phone: '(605) 574 3820',
@@ -33,9 +33,9 @@ export const SEDES_DATA: Record<'valledupar' | 'atanquez', SedeInfo> = {
     id: 'atanquez',
     name: 'Sede Atánquez',
     badge: 'Comunidad y Territorio',
-    address: 'Calle 4 # 6-18, Corregimiento de Atánquez, Valledupar, Cesar',
-    receptionSchedule: '7:30 a. m. a 3:00 p. m. (Jornada Continua)',
-    afternoonSchedule: 'Orientación para citas, seguimiento y terapia especial por WhatsApp',
+    address: 'Carrera 4 # 6-52, Atánquez, Cesar',
+    schedule:
+      'Lunes a jueves: 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m. Viernes: 7:00 a. m.–3:00 p. m.',
     whatsappNumber: '573224993463',
     whatsappFormatted: '+57 322 499 3463',
     phone: '(605) 571 8912',
@@ -51,6 +51,9 @@ export const SEDES_DATA: Record<'valledupar' | 'atanquez', SedeInfo> = {
       'Compromiso de cercanía e inclusión territorial en las estribaciones de la Sierra Nevada para familias de Atánquez y pueblos cercanos.',
   },
 };
+
+export const getSedeInfo = (sede: SedeName): SedeInfo =>
+  SEDES_DATA[sede === 'Valledupar' ? 'valledupar' : 'atanquez'];
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
@@ -270,14 +273,14 @@ export const FAQS_DATA: FaqItem[] = [
     id: 'faq-1',
     question: '¿Atienden con EPS?',
     answer:
-      'Sí, tenemos contrato y convenios vigentes con diversas EPS autorizadas para servicios de salud y rehabilitación integral. Te recomendamos escribirnos a nuestro WhatsApp indicando tu EPS y el tipo de orden médica para confirmarte de inmediato los pasos de radicación y autorización.',
+      'Los convenios y servicios pueden variar según la sede. Escríbenos por WhatsApp a la sede que deseas consultar para confirmar si atiende tu EPS y qué pasos debes seguir.',
     category: 'eps',
   },
   {
     id: 'faq-2',
     question: '¿Dónde están ubicados?',
     answer:
-      'Contamos con 2 sedes en el Cesar: Sede Principal Valledupar (Carrera 15 # 13C - 42, Barrio Obrero) y Sede Territorial Atánquez (Calle 4 # 6-18, en el corregimiento de Atánquez). Ambas cuentan con instalaciones totalmente accesibles.',
+      'Contamos con dos sedes: Valledupar, en la Carrera 17 # 13B bis-14, barrio Alfonso López; y Atánquez, en la Carrera 4 # 6-52.',
     category: 'sedes',
   },
   {
@@ -291,7 +294,7 @@ export const FAQS_DATA: FaqItem[] = [
     id: 'faq-4',
     question: '¿Qué horario tienen?',
     answer:
-      'En la Sede Valledupar recibimos documentos y órdenes en la mañana de 7:00 a.m. a 12:00 m., y en la tarde atendemos consultas y agendamiento por WhatsApp de 2:00 p.m. a 4:00 p.m. En la Sede Atánquez atendemos jornada continua de 7:30 a.m. a 3:00 p.m.',
+      'Valledupar: lunes y martes de 7:00 a. m. a 12:30 p. m. y de 2:00 p. m. a 5:00 p. m.; miércoles a viernes de 7:00 a. m. a 12:00 m. y de 2:00 p. m. a 5:00 p. m. Atánquez: lunes a jueves de 7:30 a. m. a 12:00 m. y de 1:00 p. m. a 4:00 p. m.; viernes de 7:00 a. m. a 3:00 p. m.',
     category: 'sedes',
   },
   {
@@ -305,7 +308,7 @@ export const FAQS_DATA: FaqItem[] = [
     id: 'faq-6',
     question: '¿Atienden pacientes particulares sin EPS?',
     answer:
-      'Sí, disponemos de tarifas particulares preferenciales y paquetes terapéuticos integrales para consultas individuales, valoraciones neuropsicológicas completas y planes continuos de terapia física u ocupacional.',
+      'La atención y la oferta pueden variar por sede. Escríbenos por WhatsApp para consultar si hay atención particular en la sede que necesitas.',
     category: 'servicios',
   },
 ];

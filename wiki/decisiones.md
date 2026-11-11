@@ -2,7 +2,7 @@
 tipo: decisiones
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-11-06
+actualizado: 2026-11-11
 tags: [decisiones]
 fuentes: ["../AGENTS.md", "[[documentos-y-activos]]", "Propietario, respuestas en conversación 2026-11-06"]
 ---
@@ -34,3 +34,9 @@ fuentes: ["../AGENTS.md", "[[documentos-y-activos]]", "Propietario, respuestas e
 ## 2026-11-06 — Recordar preguntas pendientes al comenzar la Etapa 2
 - **Confirmado por el propietario:** posponer las preguntas pendientes 2–5 del plan hasta comenzar la Etapa 2 y recordárselas entonces.
 - **Motivo:** el propietario prefiere responderlas durante esa etapa; conservarlas como pendientes sin bloquear el avance de la wiki.
+
+## 2026-11-11 — Usar una sede activa para los datos de contacto
+- **Confirmado por el propietario:** los dos números de sede reciben WhatsApp; los servicios cambian según la sede. Las respuestas detalladas sobre misión/equipo, actividades y privacidad se compartirán más adelante.
+- **Decisión de implementación:** pedir selección de sede al ingresar, conservarla en el navegador y permitir cambiarla de forma visible. Dirección, horario y enlaces principales de contacto siguen la sede elegida; la vista “Sedes” actualiza la selección global.
+- **Motivo:** evita dirigir consultas al número de la otra ubicación y mostrar horarios incorrectos, sin afirmar aún la distribución específica de servicios.
+- **Fuentes:** respuesta del propietario en conversación 2026-11-11; [[empresa]], [[plan-de-mejora]].

@@ -1,4 +1,5 @@
 export type ActiveView = 'inicio' | 'servicios' | 'sedes' | 'especialistas' | 'citas' | 'portal';
+export type SedeName = 'Valledupar' | 'Atánquez';
 
 export interface ServiceItem {
   id: string;
@@ -9,7 +10,7 @@ export interface ServiceItem {
   category: 'motor' | 'lenguaje' | 'salud-mental' | 'educacion' | 'evaluacion';
   categoryLabel: string;
   recommendedFor: string[];
-  sedes: ('Valledupar' | 'Atánquez')[];
+  sedes: SedeName[];
   whatsappText: string;
 }
 
@@ -20,7 +21,7 @@ export interface Specialist {
   role: string;
   rethus: string;
   experienceYears: number;
-  sedes: ('Valledupar' | 'Atánquez')[];
+  sedes: SedeName[];
   image: string;
   bio: string;
   focusAreas: string[];
@@ -32,8 +33,7 @@ export interface SedeInfo {
   name: string;
   badge: string;
   address: string;
-  receptionSchedule: string;
-  afternoonSchedule: string;
+  schedule: string;
   whatsappNumber: string;
   whatsappFormatted: string;
   phone: string;
@@ -51,7 +51,7 @@ export interface Testimonial {
   rating: number;
   comment: string;
   service: string;
-  sede: 'Valledupar' | 'Atánquez';
+  sede: SedeName;
   date: string;
   isExample?: boolean;
 }
@@ -73,7 +73,7 @@ export interface AppointmentRecord {
   email?: string;
   isMinor: boolean;
   guardianName?: string;
-  sede: 'Valledupar' | 'Atánquez';
+  sede: SedeName;
   serviceId: string;
   serviceName: string;
   eps: string;

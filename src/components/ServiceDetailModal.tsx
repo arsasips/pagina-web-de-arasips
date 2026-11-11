@@ -1,17 +1,19 @@
 import React from 'react';
-import { ServiceItem, Specialist } from '../types';
-import { SPECIALISTS_DATA, SEDES_DATA } from '../data/mockData';
+import { ServiceItem, Specialist, SedeName } from '../types';
+import { SPECIALISTS_DATA, getSedeInfo } from '../data/mockData';
 
 interface ServiceDetailModalProps {
   service: ServiceItem | null;
   onClose: () => void;
   onBookService: (serviceId: string) => void;
+  selectedSede: SedeName;
 }
 
 export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
   service,
   onClose,
   onBookService,
+  selectedSede,
 }) => {
   if (!service) return null;
 
@@ -78,19 +80,9 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
 
           <div>
             <h4 className="text-xs font-bold uppercase text-[#004786] tracking-wider mb-2">
-              Disponibilidad en Sedes:
+              Consulta por sede:
             </h4>
-            <div className="flex gap-2">
-              {service.sedes.map((sede) => (
-                <span
-                  key={sede}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-[#cce5ff] text-[#004786]"
-                >
-                  <span className="material-symbols-outlined text-[16px]">pin_drop</span>
-                  <span>Sede {sede}</span>
-                </span>
-              ))}
-            </div>
+            <p className="text-sm text-[#424751]">La oferta cambia según la sede. Consulta con la sede {selectedSede} para confirmar si presta este servicio.</p>
           </div>
 
           {/* Action buttons */}
@@ -106,9 +98,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
               <span>Agendar cita de {service.name}</span>
             </button>
             <a
-              href={`https://wa.me/${SEDES_DATA.valledupar.whatsappNumber}?text=${encodeURIComponent(
-                service.whatsappText
-              )}`}
+              href={`https://wa.me/${getSedeInfo(selectedSede).whatsappNumber}?text=${encodeURIComponent(service.whatsappText)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-[#004786] hover:bg-[#00386b] text-white px-5 py-3 rounded-full font-bold text-sm transition-colors"
