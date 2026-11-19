@@ -75,3 +75,8 @@ fuentes: ["../AGENTS.md", "[[documentos-y-activos]]", "Propietario, respuestas e
 - **Confirmado por el propietario:** integrar LOGO.jpeg y combinar en la página los colores de la marca.
 - **Decisión de implementación:** conservar el original en Docs y usar una copia local compartida en encabezado y pie. Aplicar azul como base, superficies azul claro, naranja de acento y una franja arcoíris fina para reflejar el logo sin saturar el contenido.
 - **Fuente:** propietario, conversación 2026-11-19; [[documentos-y-activos]].
+
+## 2026-11-19 — Actualizar el directorio ampliado de Atánquez
+- **Confirmado por el propietario:** agregar el contenido de `2PROFESIONAL - SEDE ATANQUEZ.docx` y que la foto nueva está autorizada.
+- **Decisión de implementación:** actualizar las biografías y fotos de las personas ya listadas sin duplicarlas; añadir a Vanessa Judith Arias Arias y Carmen Cecilia Paso Maestre con la información y foto asociadas en el documento.
+- **Fuente:** propietario y original de Docs; [[documentos-y-activos]], [[empresa]].

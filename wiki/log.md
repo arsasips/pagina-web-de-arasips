@@ -138,3 +138,8 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Aplicada paleta con azul de marca, fondos azulados suaves, naranja de acento y detalle lineal con los tonos del arcoíris del logo.
 - Revisada la página local en navegador: carga logo y contenido. La revisión móvil queda pendiente; no se publicó.
 - Actualizados [[documentos-y-activos]], [[estado-del-proyecto]], [[pendientes]] y [[decisiones]].
+
+## [2026-11-19] equipo | Directorio ampliado de Atánquez
+- Inspeccionado `2PROFESIONAL - SEDE ATANQUEZ.docx`: amplía biografías, confirma cinco perfiles profesionales y dos administrativos, con siete fotos. Se conservó el documento fuente en Docs.
+- Actualizadas fichas existentes sin duplicar sus nombres; añadidos Vanessa Judith Arias Arias (psicología) y Carmen Cecilia Paso Maestre (auxiliar de enfermería y admisiones). Incorporadas las biografías disponibles y fotos asociadas; el propietario confirmó autorización de la foto nueva.
+- Actualizados [[documentos-y-activos]], [[empresa]], [[pendientes]], [[estado-del-proyecto]] y [[decisiones]].

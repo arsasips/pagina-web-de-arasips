@@ -7,12 +7,20 @@ interface SpecialistsViewProps {
   selectedSede: SedeName;
 }
 
-const ADMIN_TEAM: Array<{ name: string; role: string; sede: SedeName; image: string }> = [
+const ADMIN_TEAM: Array<{ name: string; role: string; sede: SedeName; image: string; bio?: string }> = [
   {
     name: 'Arianna Yisel Córdoba Mindiola',
     role: 'Admisiones y facturación',
     sede: 'Atánquez',
     image: '/images/profesionales/arianna-cordoba-mindiola.jpeg',
+    bio: 'Encargada de gestionar los procesos de ingreso y admisión de usuarios, verificación de derechos y autorizaciones, así como la facturación de los servicios de salud prestados por la IPS, garantizando el cumplimiento de la normatividad vigente, la eficiencia administrativa y la continuidad en la prestación de los servicios.',
+  },
+  {
+    name: 'Carmen Cecilia Paso Maestre',
+    role: 'Auxiliar de enfermería y admisionista',
+    sede: 'Atánquez',
+    image: '/images/profesionales/carmen-cecilia-paso-maestre.jpeg',
+    bio: 'Con experiencia en atención al usuario, primera infancia y procesos administrativos en salud. Tiene conocimientos en rutas de atención, orientación a familias y cuidado integral del adulto mayor. Se caracteriza por su responsabilidad, liderazgo, compromiso y calidad humana, con vocación de servicio y facilidad para trabajar en equipo.',
   },
   {
     name: 'Lexibel León',
@@ -107,7 +115,7 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.length === 0 && (
           <p className="md:col-span-2 lg:col-span-3 text-center text-sm text-[#424751] bg-white rounded-2xl p-8">
-            La información del equipo de Valledupar aún no se ha incluido en este directorio.
+            No se encontraron perfiles con esos criterios para esta sede.
           </p>
         )}
         {filtered.map((specialist) => (
@@ -218,6 +226,7 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
             <span className="text-[11px] font-bold uppercase tracking-wider text-[#004090]">Equipo administrativo</span>
             <h2 className="font-heading font-bold text-xl text-[#1c1c17] mt-1">{member.name}</h2>
             <p className="text-xs text-[#727782] mt-1">{member.role}</p>
+            {member.bio && <p className="text-xs text-[#424751] leading-relaxed mt-3">{member.bio}</p>}
             <span className="inline-block mt-3 bg-[#004090]/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">
               {member.sede}
             </span>

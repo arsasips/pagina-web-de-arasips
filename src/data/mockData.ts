@@ -219,7 +219,7 @@ export const SPECIALISTS_DATA: Specialist[] = [
     specialty: 'Terapia Ocupacional',
     sedes: ['Atánquez'],
     image: '/images/profesionales/lina-romero-padilla.jpeg',
-    bio: 'Promueve la autonomía, independencia y bienestar mediante actividades significativas que fortalecen habilidades físicas, cognitivas, emocionales y sociales, y la participación en las actividades de la vida diaria.',
+    bio: 'Busca promover la autonomía, independencia y bienestar de las personas, fortaleciendo sus habilidades físicas, cognitivas, emocionales y sociales mediante actividades significativas que favorecen su participación y desempeño en las actividades de la vida diaria.',
   },
   {
     id: 'atanquez-fonoaudiologia-dayana-perez',
@@ -227,6 +227,16 @@ export const SPECIALISTS_DATA: Specialist[] = [
     specialty: 'Fonoaudiología',
     sedes: ['Atánquez'],
     image: '/images/profesionales/dayana-perez-mieles.jpeg',
+    bio: 'Con experiencia en atención terapéutica, enfocada en la evaluación, intervención y rehabilitación de las alteraciones del lenguaje, habla, comunicación y motricidad orofacial. Cuenta con experiencia en la atención de población infantil y adulta, abordando dificultades del neurodesarrollo, trastornos de la comunicación y condiciones neurodegenerativas. Se caracteriza por su compromiso, vocación de servicio y atención humanizada, orientada a fortalecer las habilidades comunicativas, promover la autonomía y mejorar la calidad de vida de sus pacientes.',
+  },
+  {
+    id: 'atanquez-psicologia-vanessa-arias',
+    name: 'Vanessa Judith Arias Arias',
+    specialty: 'Psicología',
+    role: 'Esp. Neuropsicopedagogía',
+    sedes: ['Atánquez'],
+    image: '/images/profesionales/vanessa-judith-arias-arias.jpeg',
+    bio: 'Con experiencia en atención psicológica, acompañamiento emocional y procesos de intervención individual, familiar y comunitaria. Orientada al bienestar integral, el fortalecimiento de habilidades socioemocionales y el desarrollo de estrategias que favorezcan la salud mental, la autonomía y la calidad de vida. Se caracteriza por un enfoque humanizado, ético e integral, reconociendo las particularidades y necesidades de cada persona y su entorno.',
   },
   {
     id: 'atanquez-fonoaudiologia-mayra-silva',
@@ -234,7 +244,7 @@ export const SPECIALISTS_DATA: Specialist[] = [
     specialty: 'Fisioterapia',
     sedes: ['Atánquez'],
     image: '/images/profesionales/mayra-silva-venecia.jpeg',
-    bio: 'Fisioterapeuta con más de 10 años de experiencia en consulta externa, en las áreas osteomuscular, neurológica y de neurodesarrollo, así como en la atención de pacientes en modalidad Hospital Día. Realiza valoración e intervención fisioterapéutica para niños, adolescentes, adultos y adultos mayores, orientada a la rehabilitación funcional y al mejoramiento de la calidad de vida.',
+    bio: 'Fisioterapeuta con más de 10 años de experiencia en consulta externa, con competencias en las áreas osteomuscular, neurológica y de neurodesarrollo, así como en la atención de pacientes en modalidad Hospital Día. Cuenta con experiencia en valoración e intervención fisioterapéutica dirigida a niños, adolescentes, adultos y adultos mayores, orientada a la rehabilitación funcional y al mejoramiento de la calidad de vida.',
   },
   {
     id: 'atanquez-psicologia-valery-gutierrez',
@@ -242,7 +252,7 @@ export const SPECIALISTS_DATA: Specialist[] = [
     specialty: 'Psicología',
     sedes: ['Atánquez'],
     image: '/images/profesionales/valery-gutierrez-torres.jpeg',
-    bio: 'Experiencia en atención e intervención individual, grupal y familiar a adolescentes, jóvenes y adultos. Trabaja en promoción y prevención de la salud mental, orientación psicológica y bienestar emocional.',
+    bio: 'Psicóloga con experiencia en el área de salud mental, brindando atención e intervención individual, grupal y familiar a adolescentes, jóvenes y adultos. Con experiencia en promoción y prevención de la salud mental, orientación psicológica y fortalecimiento del bienestar emocional.',
   },
   {
     id: 'valledupar-psicologia-adriana-contreras',

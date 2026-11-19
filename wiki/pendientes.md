@@ -28,6 +28,7 @@ fuentes: ["../src/data/mockData.ts", "[[documentos-y-activos]]"]
 - **Pendiente:** para usar imágenes de actividades, precisar el alcance del “sí” recibido: autorización por pieza y permisos de acudientes cuando aparecen menores; confirmar frecuencia y próxima fecha.
 - **Pendiente:** correo de privacidad, dirección/sede y contacto de Valledupar, enlaces de Maps/redes y existencia de testimonios autorizados.
 - **Resuelto (2026-11-19):** misión, visión y perfiles disponibles de Atánquez incorporados desde originales en Docs. El propietario confirmó que los retratos están autorizados. La visión de la placa menciona 2026 y el año se omitió en la página para mantener la formulación vigente.
+- **Resuelto (2026-11-19):** directorio ampliado de Atánquez actualizado desde `2PROFESIONAL - SEDE ATANQUEZ.docx`; se agregaron Vanessa Judith Arias Arias y Carmen Cecilia Paso Maestre, con su foto autorizada, y se ampliaron las fichas existentes. Original preservado en Docs.
 - **Preferencia/instrucción confirmada (2026-11-06):** recordar las preguntas pendientes 2–5 de [[plan-de-mejora]] al comenzar la Etapa 2; el propietario las responderá entonces.
 - **Pendiente del Paso 1:** asignar fotos/videos de actividades a sede y fecha, y confirmar autorizaciones antes de publicarlos. Las fachadas de Valledupar y Atánquez están identificadas en `Docs/`.
 - **Pendiente:** confirmar vigencia de teléfonos/correos hallados en el volante, si los números reciben WhatsApp y qué servicios del material gráfico corresponden a cada sede.
