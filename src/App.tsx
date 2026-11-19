@@ -150,11 +150,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fdf9f1] text-[#1c1c17] flex flex-col font-sans">
+    <div className="min-h-screen bg-[#FAFCFF] text-[#1c1c17] flex flex-col font-sans">
       {/* Toast Notification */}
       {toastMessage && (
-        <div className="fixed top-24 right-4 z-50 bg-[#004786] text-white px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-white/20 animate-in fade-in slide-in-from-top-4 duration-300">
-          <span className="material-symbols-outlined text-[22px] text-[#fc9427]">
+        <div className="fixed top-24 right-4 z-50 bg-[#004090] text-white px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-white/20 animate-in fade-in slide-in-from-top-4 duration-300">
+          <span className="material-symbols-outlined text-[22px] text-[#B84500]">
             notifications_active
           </span>
           <span className="text-xs font-semibold">{toastMessage}</span>

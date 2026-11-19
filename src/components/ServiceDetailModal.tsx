@@ -23,15 +23,15 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="bg-[#fdf9f1] rounded-3xl max-w-xl w-full shadow-2xl border border-[#1c1c17]/10 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+      <div className="bg-[#FAFCFF] rounded-3xl max-w-xl w-full shadow-2xl border border-[#1c1c17]/10 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
         {/* Header */}
-        <div className="bg-gradient-to-r from-[#004786] to-[#1d5fa7] text-white p-6 relative">
+        <div className="bg-gradient-to-r from-[#004090] to-[#0078D0] text-white p-6 relative">
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white shrink-0">
               <span className="material-symbols-outlined text-[32px]">{service.iconName}</span>
             </div>
             <div>
-              <span className="text-[11px] uppercase tracking-widest font-bold text-[#cce5ff]">
+              <span className="text-[11px] uppercase tracking-widest font-bold text-[#D8EEFF]">
                 {service.categoryLabel}
               </span>
               <h3 className="font-heading font-bold text-2xl leading-tight">
@@ -51,7 +51,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
         {/* Content */}
         <div className="p-6 flex flex-col gap-5">
           <div>
-            <h4 className="text-xs font-bold uppercase text-[#004786] tracking-wider mb-1.5">
+            <h4 className="text-xs font-bold uppercase text-[#004090] tracking-wider mb-1.5">
               Enfoque Clínico y Terapéutico
             </h4>
             <p className="text-sm text-[#424751] leading-relaxed">
@@ -60,7 +60,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase text-[#004786] tracking-wider mb-2">
+            <h4 className="text-xs font-bold uppercase text-[#004090] tracking-wider mb-2">
               Motivos de Consulta y Recomendaciones:
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -79,7 +79,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase text-[#004786] tracking-wider mb-2">
+            <h4 className="text-xs font-bold uppercase text-[#004090] tracking-wider mb-2">
               Consulta por sede:
             </h4>
             <p className="text-sm text-[#424751]">La oferta cambia según la sede. Consulta con la sede {selectedSede} para confirmar si presta este servicio.</p>
@@ -92,7 +92,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                 onClose();
                 onBookService(service.id);
               }}
-              className="flex-1 flex items-center justify-center gap-2 bg-[#fc9427] hover:bg-[#e57f15] text-white py-3 rounded-full font-bold text-sm shadow-[0_4px_16px_rgba(252,148,39,0.32)] transition-all"
+              className="flex-1 flex items-center justify-center gap-2 bg-[#B84500] hover:bg-[#943700] text-white py-3 rounded-full font-bold text-sm shadow-[0_4px_16px_rgba(184,69,0,0.32)] transition-all"
             >
               <span className="material-symbols-outlined text-[18px]">calendar_month</span>
               <span>Agendar cita de {service.name}</span>
@@ -101,7 +101,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
               href={`https://wa.me/${getSedeInfo(selectedSede).whatsappNumber}?text=${encodeURIComponent(service.whatsappText)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-[#004786] hover:bg-[#00386b] text-white px-5 py-3 rounded-full font-bold text-sm transition-colors"
+              className="flex items-center justify-center gap-2 bg-[#004090] hover:bg-[#00346B] text-white px-5 py-3 rounded-full font-bold text-sm transition-colors"
             >
               <span className="material-symbols-outlined text-[18px]">chat</span>
               <span>WhatsApp Directo</span>

@@ -18,14 +18,14 @@ export interface Specialist {
   id: string;
   name: string;
   specialty: string;
-  role: string;
-  rethus: string;
-  experienceYears: number;
+  role?: string;
+  rethus?: string;
+  experienceYears?: number;
   sedes: SedeName[];
-  image: string;
-  bio: string;
-  focusAreas: string[];
-  schedule: string;
+  image?: string;
+  bio?: string;
+  focusAreas?: string[];
+  schedule?: string;
 }
 
 export interface SedeInfo {

@@ -40,8 +40,8 @@ export const FaqModal: React.FC<FaqModalProps> = ({ isOpen, onClose, selectedSed
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="bg-[#fdf9f1] rounded-3xl max-w-md w-full shadow-2xl border border-[#1c1c17]/10 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
-        <div className="bg-[#004786] text-white p-5 flex items-center justify-between">
+      <div className="bg-[#FAFCFF] rounded-3xl max-w-md w-full shadow-2xl border border-[#1c1c17]/10 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+        <div className="bg-[#004090] text-white p-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="material-symbols-outlined text-[24px]">help</span>
             <div>
@@ -67,7 +67,7 @@ export const FaqModal: React.FC<FaqModalProps> = ({ isOpen, onClose, selectedSed
               placeholder="Ej: Mariangel Cuello"
               value={userName}
               onChange={(e) => setUserName(e.target.value)}
-              className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004786]"
+              className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004090]"
             />
           </div>
 
@@ -81,7 +81,7 @@ export const FaqModal: React.FC<FaqModalProps> = ({ isOpen, onClose, selectedSed
                 onClick={() => setTargetSede('valledupar')}
                 className={`py-2 px-3 rounded-xl text-xs font-bold border transition-colors ${
                   targetSede === 'valledupar'
-                    ? 'bg-[#004786] text-white border-[#004786]'
+                    ? 'bg-[#004090] text-white border-[#004090]'
                     : 'bg-white text-[#424751] border-[#1c1c17]/10'
                 }`}
               >
@@ -92,7 +92,7 @@ export const FaqModal: React.FC<FaqModalProps> = ({ isOpen, onClose, selectedSed
                 onClick={() => setTargetSede('atanquez')}
                 className={`py-2 px-3 rounded-xl text-xs font-bold border transition-colors ${
                   targetSede === 'atanquez'
-                    ? 'bg-[#004786] text-white border-[#004786]'
+                    ? 'bg-[#004090] text-white border-[#004090]'
                     : 'bg-white text-[#424751] border-[#1c1c17]/10'
                 }`}
               >
@@ -111,7 +111,7 @@ export const FaqModal: React.FC<FaqModalProps> = ({ isOpen, onClose, selectedSed
               placeholder="Ej: ¿Qué costo tiene la valoración particular? o ¿Cómo radico mi orden de Sanitas?..."
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
-              className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004786]"
+              className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004090]"
             />
           </div>
 
@@ -119,13 +119,13 @@ export const FaqModal: React.FC<FaqModalProps> = ({ isOpen, onClose, selectedSed
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 rounded-full text-xs font-bold text-[#424751] hover:bg-[#ebe8e0]"
+              className="px-4 py-2 rounded-full text-xs font-bold text-[#424751] hover:bg-[#E1EDF8]"
             >
               Cerrar
             </button>
             <button
               type="submit"
-              className="flex items-center gap-1.5 bg-[#fc9427] hover:bg-[#e57f15] text-white px-5 py-2 rounded-full text-xs font-bold shadow-md transition-all"
+              className="flex items-center gap-1.5 bg-[#B84500] hover:bg-[#943700] text-white px-5 py-2 rounded-full text-xs font-bold shadow-md transition-all"
             >
               <span className="material-symbols-outlined text-[16px]">chat</span>
               <span>Enviar a WhatsApp</span>

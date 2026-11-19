@@ -48,8 +48,8 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="bg-[#fdf9f1] rounded-3xl max-w-lg w-full shadow-2xl border border-[#1c1c17]/10 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
-        <div className="bg-[#004786] text-white p-5 flex items-center justify-between">
+      <div className="bg-[#FAFCFF] rounded-3xl max-w-lg w-full shadow-2xl border border-[#1c1c17]/10 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+        <div className="bg-[#004090] text-white p-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="material-symbols-outlined text-[24px]">rate_review</span>
             <div>
@@ -76,7 +76,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
                   type="button"
                   key={star}
                   onClick={() => setRating(star)}
-                  className="text-2xl text-[#fc9427] hover:scale-110 transition-transform"
+                  className="text-2xl text-[#B84500] hover:scale-110 transition-transform"
                 >
                   <span
                     className="material-symbols-outlined"
@@ -103,7 +103,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
                 placeholder="Ej: Familia Romero"
                 value={author}
                 onChange={(e) => setAuthor(e.target.value)}
-                className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004786]"
+                className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004090]"
               />
             </div>
             <div>
@@ -115,7 +115,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
                 placeholder="Ej: Valledupar"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
-                className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004786]"
+                className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004090]"
               />
             </div>
           </div>
@@ -128,7 +128,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
               <select
                 value={relation}
                 onChange={(e) => setRelation(e.target.value)}
-                className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004786]"
+                className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004090]"
               >
                 <option value="Familiar de paciente">Familiar de paciente</option>
                 <option value="Paciente de rehabilitación">Paciente de rehabilitación</option>
@@ -143,7 +143,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
               <select
                 value={sede}
                 onChange={(e) => setSede(e.target.value as 'Valledupar' | 'Atánquez')}
-                className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004786]"
+                className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004090]"
               >
                 <option value="Valledupar">Sede Valledupar</option>
                 <option value="Atánquez">Sede Atánquez</option>
@@ -161,7 +161,7 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
               placeholder="Escribe cómo ha sido la experiencia, el trato del personal y los avances observados..."
               value={comment}
               onChange={(e) => setComment(e.target.value)}
-              className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004786]"
+              className="w-full bg-white border border-[#1c1c17]/15 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#004090]"
             />
           </div>
 
@@ -169,13 +169,13 @@ export const TestimonialModal: React.FC<TestimonialModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 rounded-full text-xs font-bold text-[#424751] hover:bg-[#ebe8e0]"
+              className="px-4 py-2 rounded-full text-xs font-bold text-[#424751] hover:bg-[#E1EDF8]"
             >
               Cancelar
             </button>
             <button
               type="submit"
-              className="bg-[#fc9427] hover:bg-[#e57f15] text-white px-6 py-2 rounded-full text-xs font-bold shadow-md transition-all"
+              className="bg-[#B84500] hover:bg-[#943700] text-white px-6 py-2 rounded-full text-xs font-bold shadow-md transition-all"
             >
               Publicar Testimonio
             </button>

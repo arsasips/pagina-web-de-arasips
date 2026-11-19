@@ -92,3 +92,49 @@ fuentes: ["[[index]]", "[[documentos-y-activos]]"]
 - Revisada la página en el navegador local de escritorio; las dos fachadas servidas desde `public/images/` aparecen cargadas con ancho natural de 1600 px.
 - Confirmados `npm run lint`, `npm run build` y respuestas HTTP 200 para la página y ambos JPEG.
 - No se envió información; revisión móvil aún pendiente.
+
+## [2026-11-12] identidad visual | Azul de la paleta en títulos
+- El propietario pidió usar para las letras la referencia `Docs/.../PALETA DE COLORES.jpeg`, inspeccionada visualmente; muestra una gama desde azul intenso hasta celeste.
+- Se aplicó un azul derivado del tono intenso (`#0b5fb7`) a títulos y texto tipográfico destacado; se conservaron los textos explícitamente blancos sobre fondos oscuros. Original inmutable en `Docs/`.
+- Actualizados [[decisiones]], [[documentos-y-activos]], [[estado-del-proyecto]], [[plan-de-mejora]] e [[index]]. No se publicó ni se modificó el original.
+
+## [2026-11-12] oferta por sede | Cuatro especialidades en ambas ubicaciones
+- El propietario confirmó que psiquiatría, fisiatría, neuropediatría y neuropsicología se ofrecen tanto en Valledupar como en Atánquez.
+- El catálogo y las opciones del módulo de agendamiento ahora incluyen las cuatro para las dos sedes. No se inventaron ni añadieron datos de profesionales.
+- Actualizados [[empresa]], [[pendientes]], [[decisiones]], [[estado-del-proyecto]], [[plan-de-mejora]] e [[index]]. La asignación de los demás servicios sigue pendiente.
+
+## [2026-11-19] contenido institucional | Misión, visión y equipo de Atánquez
+- Inspeccionados los originales `mision y vision .jpeg` y `PROFESIONAL - SEDE ATANQUEZ.docx` en `Docs/`; ambos originales quedaron intactos.
+- Añadidas misión y visión a la página de inicio. Se omitió la mención temporal “en el 2026” de la visión original.
+- Reemplazados los perfiles de muestra por la información del DOCX; incorporados los cinco retratos con autorización confirmada por el propietario. No se publicaron datos de credenciales ni horarios que el archivo no respalda. Una biografía de fisioterapia sin nombre quedó pendiente de identificación.
+- Actualizados [[empresa]], [[documentos-y-activos]], [[pendientes]], [[plan-de-mejora]], [[estado-del-proyecto]] e [[index]].
+- Diagnóstico de vista previa: `ERR_CONNECTION_TIMED_OUT` en el navegador integrado y acceso al socket local bloqueado en el entorno de ejecución; no se confirma un fallo de renderizado de React. Sin publicación remota.
+
+## [2026-11-19] verificación | Contenido institucional y perfiles
+- `npm run lint` pasó con `tsc --noEmit`; `npm run build` generó `dist/` correctamente, con el aviso ya conocido de Vite sobre `__dirname`.
+- La vista visual sigue sin verificarse porque el navegador de vista previa no alcanza el servidor local (timeout).
+
+## [2026-11-19] contenido institucional | Equipo profesional de Valledupar
+- Inspeccionado el original `profesionales sede valledupar.docx` en `Docs/`; contiene nombres y cargos de tres profesionales y una persona administrativa, además de cuatro retratos. El propietario confirmó que los retratos están autorizados.
+- Incorporados los datos y las fotos asociadas por el orden de contenido del documento al directorio de Valledupar; el original se conserva sin cambios.
+- Actualizados [[empresa]], [[documentos-y-activos]], [[pendientes]], [[plan-de-mejora]], [[estado-del-proyecto]] y [[decisiones]].
+
+## [2026-11-19] revisión | Asociación del perfil de fisioterapia en Atánquez
+- Releído el orden de texto e imágenes incrustadas del DOCX: el nombre “Mayra Silva Venecia” aparece inmediatamente antes del cargo y la descripción de fisioterapia.
+- Asociada la biografía de fisioterapia a su perfil; retirada la nota provisional de nombre faltante de [[empresa]], [[pendientes]] y [[plan-de-mejora]].
+
+## [2026-11-19] verificación | Vista previa local abierta
+- Confirmado por el propietario que misión y visión aplican a ambas sedes; se registró como contenido institucional compartido.
+- Diagnóstico del bloqueo: el servidor iniciado en el entorno restringido no aceptaba conexiones al socket local. Se reinició Vite con escucha limitada a `127.0.0.1:3000`; el navegador abrió la página y quedó visible.
+- Verificación: `npm run lint` y `npm run build` pasan; Vite conserva el aviso conocido de `__dirname`. La revisión visual se limitó al inicio en escritorio; no hubo pruebas funcionales ni publicación.
+
+## [2026-11-19] ajuste visual | Retratos completos en el directorio
+- Por solicitud del propietario, cambiada la presentación de fotos de profesionales y personal administrativo a `object-contain` para evitar que las tarjetas recorten el encuadre.
+- Revisada la vista de profesionales de Valledupar en escritorio; las fotos aparecen completas. Revisión móvil aún pendiente.
+- Actualizados [[decisiones]], [[estado-del-proyecto]] e [[plan-de-mejora]].
+
+## [2026-11-19] identidad visual | Logo y paleta compartida
+- Integrada la copia local public/images/arsas-logo.jpeg en el encabezado y pie compartidos por Valledupar y Atánquez; el original en Docs no se alteró.
+- Aplicada paleta con azul de marca, fondos azulados suaves, naranja de acento y detalle lineal con los tonos del arcoíris del logo.
+- Revisada la página local en navegador: carga logo y contenido. La revisión móvil queda pendiente; no se publicó.
+- Actualizados [[documentos-y-activos]], [[estado-del-proyecto]], [[pendientes]] y [[decisiones]].

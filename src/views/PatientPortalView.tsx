@@ -70,7 +70,7 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
     <div className="max-w-[1000px] mx-auto px-4 md:px-8 py-12 flex flex-col gap-10">
       {/* Title */}
       <div className="text-center max-w-xl mx-auto flex flex-col gap-2">
-        <span className="text-xs uppercase tracking-widest text-[#004786] font-bold">
+        <span className="text-xs uppercase tracking-widest text-[#004090] font-bold">
           Portal del Paciente y Familia
         </span>
         <h1 className="font-heading text-3xl md:text-5xl font-bold text-[#1c1c17]">
@@ -94,12 +94,12 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
               placeholder="Número de documento o código de radicado"
               value={searchDoc}
               onChange={(e) => setSearchDoc(e.target.value)}
-              className="w-full bg-[#fdf9f1] border border-[#1c1c17]/15 rounded-full pl-12 pr-4 py-3 text-sm text-[#1c1c17] focus:outline-none focus:border-[#004786] focus:ring-1 focus:ring-[#004786]"
+              className="w-full bg-[#FAFCFF] border border-[#1c1c17]/15 rounded-full pl-12 pr-4 py-3 text-sm text-[#1c1c17] focus:outline-none focus:border-[#004090] focus:ring-1 focus:ring-[#004090]"
             />
           </div>
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 bg-[#004786] hover:bg-[#00386b] text-white px-8 py-3 rounded-full font-bold text-sm shadow-md transition-all shrink-0"
+            className="flex items-center justify-center gap-2 bg-[#004090] hover:bg-[#00346B] text-white px-8 py-3 rounded-full font-bold text-sm shadow-md transition-all shrink-0"
           >
             <span className="material-symbols-outlined text-[20px]">search</span>
             <span>Buscar Cita</span>
@@ -125,13 +125,13 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
                   {/* Top Bar */}
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#1c1c17]/10 pb-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-2xl bg-[#cce5ff] text-[#004786] flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-2xl bg-[#D8EEFF] text-[#004090] flex items-center justify-center">
                         <span className="material-symbols-outlined text-[26px]">
                           medical_services
                         </span>
                       </div>
                       <div>
-                        <span className="text-xs font-mono font-bold text-[#fc9427]">
+                        <span className="text-xs font-mono font-bold text-[#B84500]">
                           Radicado: {item.confirmationCode}
                         </span>
                         <h3 className="font-heading font-bold text-lg text-[#1c1c17]">
@@ -144,7 +144,7 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
 
                   {/* Details Grid */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
-                    <div className="bg-[#fdf9f1] p-3 rounded-2xl">
+                    <div className="bg-[#FAFCFF] p-3 rounded-2xl">
                       <span className="text-[#727782] block mb-0.5">Paciente:</span>
                       <p className="font-bold text-[#1c1c17]">{item.patientName}</p>
                       <p className="text-[11px] text-[#727782]">
@@ -157,9 +157,9 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
                       )}
                     </div>
 
-                    <div className="bg-[#fdf9f1] p-3 rounded-2xl">
+                    <div className="bg-[#FAFCFF] p-3 rounded-2xl">
                       <span className="text-[#727782] block mb-0.5">Sede asignada:</span>
-                      <p className="font-bold text-[#004786]">Sede {item.sede}</p>
+                      <p className="font-bold text-[#004090]">Sede {item.sede}</p>
                       <p className="text-[11px] text-[#727782]">
                         {item.sede === 'Valledupar'
                           ? SEDES_DATA.valledupar.address
@@ -167,13 +167,13 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
                       </p>
                     </div>
 
-                    <div className="bg-[#fdf9f1] p-3 rounded-2xl">
+                    <div className="bg-[#FAFCFF] p-3 rounded-2xl">
                       <span className="text-[#727782] block mb-0.5">Fecha y Turno:</span>
                       <p className="font-bold text-[#1c1c17]">{item.date}</p>
-                      <p className="text-[11px] text-[#fc9427] font-semibold">{item.timeSlot}</p>
+                      <p className="text-[11px] text-[#B84500] font-semibold">{item.timeSlot}</p>
                     </div>
 
-                    <div className="bg-[#fdf9f1] p-3 rounded-2xl">
+                    <div className="bg-[#FAFCFF] p-3 rounded-2xl">
                       <span className="text-[#727782] block mb-0.5">Convenio EPS / Modalidad:</span>
                       <p className="font-bold text-[#1c1c17]">{item.eps}</p>
                       {item.orderNumber && (
@@ -185,7 +185,7 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
                   {/* Notes & Actions */}
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
                     <div className="text-xs text-[#424751] flex items-center gap-2">
-                      <span className="material-symbols-outlined text-[#004786] text-[18px]">
+                      <span className="material-symbols-outlined text-[#004090] text-[18px]">
                         info
                       </span>
                       <span>
@@ -203,7 +203,7 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
                       )}%20a%20nombre%20de%20${encodeURIComponent(item.patientName)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 bg-[#fc9427] hover:bg-[#e57f15] text-white px-5 py-2.5 rounded-full font-bold text-xs shadow-sm transition-all"
+                      className="flex items-center gap-2 bg-[#B84500] hover:bg-[#943700] text-white px-5 py-2.5 rounded-full font-bold text-xs shadow-sm transition-all"
                     >
                       <span className="material-symbols-outlined text-[16px]">chat</span>
                       <span>Contactar a Sede por WhatsApp</span>
@@ -226,7 +226,7 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
               </p>
               <button
                 onClick={onOpenBooking}
-                className="mt-2 bg-[#004786] text-white px-6 py-2.5 rounded-full text-xs font-bold shadow-sm"
+                className="mt-2 bg-[#004090] text-white px-6 py-2.5 rounded-full text-xs font-bold shadow-sm"
               >
                 Agendar Nueva Cita
               </button>
@@ -244,7 +244,7 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
             </h3>
             <button
               onClick={onOpenBooking}
-              className="text-xs font-bold text-[#004786] hover:underline"
+              className="text-xs font-bold text-[#004090] hover:underline"
             >
               + Nueva Cita
             </button>
@@ -258,13 +258,13 @@ export const PatientPortalView: React.FC<PatientPortalViewProps> = ({
               >
                 <div className="flex items-start justify-between">
                   <div>
-                    <span className="text-[10px] font-mono font-bold text-[#fc9427]">
+                    <span className="text-[10px] font-mono font-bold text-[#B84500]">
                       {a.confirmationCode}
                     </span>
                     <h4 className="font-heading font-bold text-base text-[#1c1c17]">
                       {a.patientName}
                     </h4>
-                    <p className="text-xs text-[#004786] font-semibold">{a.serviceName}</p>
+                    <p className="text-xs text-[#004090] font-semibold">{a.serviceName}</p>
                   </div>
                   <div>{getStatusBadge(a.status)}</div>
                 </div>

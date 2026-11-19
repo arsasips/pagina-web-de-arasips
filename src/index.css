@@ -3,26 +3,27 @@
 @theme {
   --font-outfit: 'Outfit', sans-serif;
   --font-jakarta: 'Plus Jakarta Sans', sans-serif;
-  --color-primary: #004786;
-  --color-primary-container: #1d5fa7;
-  --color-secondary: #8f4e00;
-  --color-secondary-container: #fc9427;
+  --color-primary: #004090;
+  --color-primary-container: #0078D0;
+  --color-secondary: #873800;
+  --color-secondary-container: #B84500;
   --color-on-secondary: #ffffff;
-  --color-surface: #fdf9f1;
-  --color-surface-container-low: #f7f3eb;
-  --color-surface-container: #f1ede6;
-  --color-surface-container-high: #ebe8e0;
-  --color-surface-container-highest: #e6e2da;
+  --color-surface: #FAFCFF;
+  --color-surface-container-low: #F2F8FE;
+  --color-surface-container: #EAF3FB;
+  --color-surface-container-high: #E1EDF8;
+  --color-surface-container-highest: #D5E6F4;
   --color-surface-container-lowest: #ffffff;
-  --color-tertiary: #004b72;
-  --color-tertiary-fixed: #cce5ff;
+  --color-tertiary: #004090;
+  --color-tertiary-fixed: #D8EEFF;
   --color-on-surface: #1c1c17;
   --color-on-surface-variant: #424751;
+  --color-brand-text: #004090;
 }
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: #fdf9f1;
+  background-color: #FAFCFF;
   color: #1c1c17;
 }
 
@@ -30,12 +31,18 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: 'Outfit', sans-serif;
 }
 
+h1:not(.text-white), h2:not(.text-white), h3:not(.text-white),
+h4:not(.text-white), h5:not(.text-white), h6:not(.text-white),
+.font-heading:not(.text-white) {
+  color: var(--color-brand-text);
+}
+
 @keyframes pulse-subtle {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(252, 148, 39, 0.45);
+    box-shadow: 0 0 0 0 rgba(184, 69, 0, 0.38);
   }
   50% {
-    box-shadow: 0 0 0 16px rgba(252, 148, 39, 0);
+    box-shadow: 0 0 0 16px rgba(184, 69, 0, 0);
   }
 }
 
@@ -58,4 +65,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+}
+
+.brand-spectrum {
+  background: linear-gradient(90deg, #c80008 0%, #f07800 20%, #f8c800 40%, #00a850 60%, #0078d0 80%, #781078 100%);
 }

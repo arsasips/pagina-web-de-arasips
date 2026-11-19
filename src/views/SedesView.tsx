@@ -20,7 +20,7 @@ export const SedesView: React.FC<SedesViewProps> = ({
     <div className="max-w-[1240px] mx-auto px-4 md:px-8 py-12 flex flex-col gap-10">
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto flex flex-col gap-3">
-        <span className="text-xs uppercase tracking-widest text-[#004786] font-bold">
+        <span className="text-xs uppercase tracking-widest text-[#004090] font-bold">
           Infraestructura y Cobertura
         </span>
         <h1 className="font-heading text-3xl md:text-5xl font-bold text-[#1c1c17]">
@@ -37,8 +37,8 @@ export const SedesView: React.FC<SedesViewProps> = ({
             onClick={() => onSelectSede('Valledupar')}
             className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold transition-all ${
               activeTab === 'valledupar'
-                ? 'bg-[#004786] text-white shadow-md'
-                : 'bg-white text-[#424751] hover:bg-[#ebe8e0] border border-[#1c1c17]/10'
+                ? 'bg-[#004090] text-white shadow-md'
+                : 'bg-white text-[#424751] hover:bg-[#E1EDF8] border border-[#1c1c17]/10'
             }`}
           >
             <span className="material-symbols-outlined text-[20px]">location_city</span>
@@ -48,8 +48,8 @@ export const SedesView: React.FC<SedesViewProps> = ({
             onClick={() => onSelectSede('Atánquez')}
             className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold transition-all ${
               activeTab === 'atanquez'
-                ? 'bg-[#004786] text-white shadow-md'
-                : 'bg-white text-[#424751] hover:bg-[#ebe8e0] border border-[#1c1c17]/10'
+                ? 'bg-[#004090] text-white shadow-md'
+                : 'bg-white text-[#424751] hover:bg-[#E1EDF8] border border-[#1c1c17]/10'
             }`}
           >
             <span className="material-symbols-outlined text-[20px]">nature_people</span>
@@ -68,12 +68,12 @@ export const SedesView: React.FC<SedesViewProps> = ({
               alt={sede.name}
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-4 left-4 bg-[#004786] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+            <div className="absolute top-4 left-4 bg-[#004090] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
               {sede.badge}
             </div>
             <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-[#004786] text-[24px]">
+                <span className="material-symbols-outlined text-[#004090] text-[24px]">
                   accessible_forward
                 </span>
                 <span className="text-xs font-bold text-[#1c1c17]">
@@ -85,8 +85,8 @@ export const SedesView: React.FC<SedesViewProps> = ({
 
           {/* Quick Schedule Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div className="bg-[#fdf9f1] p-4 rounded-2xl border border-[#1c1c17]/5 flex flex-col gap-1">
-              <div className="flex items-center gap-2 text-[#004786] text-xs font-bold">
+            <div className="bg-[#FAFCFF] p-4 rounded-2xl border border-[#1c1c17]/5 flex flex-col gap-1">
+              <div className="flex items-center gap-2 text-[#004090] text-xs font-bold">
                 <span className="material-symbols-outlined text-[18px]">event_available</span>
                 <span>Horario de atención</span>
               </div>
@@ -96,8 +96,8 @@ export const SedesView: React.FC<SedesViewProps> = ({
               <p className="text-[11px] text-[#727782]">Horario informado para esta sede</p>
             </div>
 
-            <div className="bg-[#fdf9f1] p-4 rounded-2xl border border-[#1c1c17]/5 flex flex-col gap-1">
-              <div className="flex items-center gap-2 text-[#fc9427] text-xs font-bold">
+            <div className="bg-[#FAFCFF] p-4 rounded-2xl border border-[#1c1c17]/5 flex flex-col gap-1">
+              <div className="flex items-center gap-2 text-[#B84500] text-xs font-bold">
                 <span className="material-symbols-outlined text-[18px]">chat</span>
                 <span>Contacto por WhatsApp</span>
               </div>
@@ -114,7 +114,7 @@ export const SedesView: React.FC<SedesViewProps> = ({
           <div>
             <h2 className="font-heading text-3xl font-bold text-[#1c1c17]">{sede.name}</h2>
             <div className="flex items-center gap-2 text-[#424751] text-sm mt-2">
-              <span className="material-symbols-outlined text-[#004786] text-[20px]">
+              <span className="material-symbols-outlined text-[#004090] text-[20px]">
                 location_on
               </span>
               <span className="font-medium">{sede.address}</span>
@@ -126,14 +126,14 @@ export const SedesView: React.FC<SedesViewProps> = ({
 
           {/* Facilities list */}
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#004786] mb-3">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#004090] mb-3">
               Áreas y Equipamiento Destacado:
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {sede.facilities.map((fac, idx) => (
                 <div
                   key={idx}
-                  className="flex items-start gap-2 bg-[#f7f3eb] p-3 rounded-xl text-xs text-[#1c1c17]"
+                  className="flex items-start gap-2 bg-[#F2F8FE] p-3 rounded-xl text-xs text-[#1c1c17]"
                 >
                   <span className="material-symbols-outlined text-emerald-600 text-[18px] shrink-0">
                     check
@@ -152,7 +152,7 @@ export const SedesView: React.FC<SedesViewProps> = ({
                   activeTab === 'valledupar' ? 'Valledupar' : 'Atánquez'
                 )
               }
-              className="flex-1 flex items-center justify-center gap-2 bg-[#004786] hover:bg-[#00386b] text-white py-3.5 rounded-full font-bold text-sm shadow-md transition-all"
+              className="flex-1 flex items-center justify-center gap-2 bg-[#004090] hover:bg-[#00346B] text-white py-3.5 rounded-full font-bold text-sm shadow-md transition-all"
             >
               <span className="material-symbols-outlined text-[18px]">calendar_month</span>
               <span>Agendar cita en {activeTab === 'valledupar' ? 'Valledupar' : 'Atánquez'}</span>
@@ -164,7 +164,7 @@ export const SedesView: React.FC<SedesViewProps> = ({
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-[#fc9427] hover:bg-[#e57f15] text-white px-6 py-3.5 rounded-full font-bold text-sm shadow-[0_4px_16px_rgba(252,148,39,0.3)] transition-all"
+              className="flex items-center justify-center gap-2 bg-[#B84500] hover:bg-[#943700] text-white px-6 py-3.5 rounded-full font-bold text-sm shadow-[0_4px_16px_rgba(184,69,0,0.3)] transition-all"
             >
               <span className="material-symbols-outlined text-[18px]">chat</span>
               <span>WhatsApp Sede</span>
@@ -172,8 +172,8 @@ export const SedesView: React.FC<SedesViewProps> = ({
           </div>
 
           {/* Guide for first time patients */}
-          <div className="bg-[#fdf9f1] p-4 rounded-2xl border border-[#1c1c17]/10">
-            <h4 className="text-xs font-bold text-[#004786] flex items-center gap-2 mb-2">
+          <div className="bg-[#FAFCFF] p-4 rounded-2xl border border-[#1c1c17]/10">
+            <h4 className="text-xs font-bold text-[#004090] flex items-center gap-2 mb-2">
               <span className="material-symbols-outlined text-[18px]">info</span>
               <span>Requisitos para tu primera visita a la sede:</span>
             </h4>

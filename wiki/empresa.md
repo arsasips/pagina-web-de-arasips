@@ -2,7 +2,7 @@
 tipo: entidad
 estado: parcialmente-confirmado
 creado: 2026-10-29
-actualizado: 2026-11-11
+actualizado: 2026-11-19
 tags: [empresa, salud, ARSAS]
 fuentes: ["../index.html", "../src/data/mockData.ts", "[[documentos-y-activos]]", "Propietario, respuestas en conversación 2026-11-06"]
 ---
@@ -13,13 +13,18 @@ fuentes: ["../index.html", "../src/data/mockData.ts", "[[documentos-y-activos]]"
 - **Confirmado por el propietario (2026-11-06):** nombre informado: «Centro Rehabilitación y Educación Especial ARSAS IPS»; NIT informado: `824003324-4`.
 - **Confirmado por el propietario (2026-11-06):** domicilio empresarial informado: Carrera 17 # 13B bis-14, barrio Alfonso López, asociado a la sede Valledupar según la confirmación posterior del propietario.
 - **Confirmado por el propietario (2026-11-06):** oferta de la empresa: terapia ocupacional, terapia física, fonoaudiología, trabajo social, fisiatría, psiquiatría, neuropediatría y psicología. La distribución por sede y las condiciones EPS/particulares están pendientes.
+- **Confirmado por el propietario (2026-11-12):** psiquiatría, fisiatría, neuropediatría y neuropsicología se ofrecen en ambas sedes. La distribución de los demás servicios y las condiciones EPS/particulares continúan pendientes.
 - **Confirmado por el propietario (2026-11-06):** sede Atánquez, Carrera 4 # 6-52; lunes a jueves 7:30 a. m.–12:00 p. m. y 1:00–4:00 p. m.; viernes 7:00 a. m.–3:00 p. m.; teléfono `322 499 3463`.
 - **Confirmado por el propietario (2026-11-06):** sede Valledupar, dirección Carrera 17 # 13B bis-14, barrio Alfonso López; lunes y martes 7:00 a. m.–12:30 p. m. y 2:00–5:00 p. m.; miércoles a viernes 7:00 a. m.–12:00 p. m. y 2:00–5:00 p. m.
 - **Confirmado por el propietario (2026-11-11):** ambos números de sede (`322 499 3463` Atánquez y `310 560 6873` Valledupar) reciben WhatsApp. Falta confirmar vigencia de teléfonos/correos y enlaces de Maps.
 - **Encontrado en el volante `REHABILTACION.jpeg` de `Docs/`:** teléfonos impresos `322 499 3463` y `310 560 6873`, correos `arsasipsatanquez@gmail.com` y `arsasipsvalledupar@gmail.com`. El propietario confirmó ambos números como WhatsApp; los correos no se identifican como correo de privacidad.
 - **Encontrado en material de `Docs/`:** la fachada de Atánquez y los volantes enumeran servicios. Una lista incluye salud mental y medicina general; difiere de la lista general que informó el propietario. Aclarar vigencia y sede de cada servicio antes de cambiar la web.
-- **Pendiente por entrega posterior del propietario:** misión, visión y datos de profesionales.
-- **Pendiente:** los servicios actuales del código no deben asumirse como aprobados; varios servicios informados ahora no aparecen allí.
+- **Confirmado en la placa institucional `Docs/.../mision y vision .jpeg` (2026-11-19):** misión centrada en atención y rehabilitación integral, equipo calificado y prácticas basadas en evidencia para el bienestar individual y social. Se transcribió y ajustó la redacción para la página.
+- **Confirmado en la misma placa (2026-11-19):** la visión propone reconocimiento regional en rehabilitación integral, investigación y aplicación de conocimientos, orientados a la calidad de vida. La placa fija la meta en 2026; el texto de la landing omite ese año por vigencia temporal.
+- **Confirmado por el propietario (2026-11-19):** la misión y la visión son institucionales y aplican a ambas sedes. La página las presenta como contenido general, no asociadas a una ubicación.
+- **Confirmado en `Docs/.../PROFESIONAL - SEDE ATANQUEZ.docx` (2026-11-19):** directorio de equipo con cargos, algunos perfiles biográficos y retratos para Atánquez. El propietario pidió incorporarlos y confirmó que las fotos están autorizadas por cada profesional. El nombre “Mayra Silva Venecia” aparece inmediatamente antes del cargo y la biografía de fisioterapia, por lo que se vinculó esa información a su perfil.
+- **Confirmado en `Docs/.../profesionales sede valledupar.docx` (2026-11-19):** directorio de tres profesionales y una persona administrativa para Valledupar, con cargos e imágenes. Se incorporaron los datos legibles del original y el propietario confirmó la autorización de los retratos. El documento no aporta biografías clínicas.
+- **Pendiente:** confirmar asignación por sede de los demás servicios además de psiquiatría, fisiatría, neuropediatría y neuropsicología; verificar también atención EPS/particulares.
 - **Confirmado visualmente en un original:** `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/LOGO.jpeg` muestra un logotipo infantil multicolor “ARSAS”. `PALETA DE COLORES.jpeg` presenta una gama de azules. En el código actual predominan azul, naranja y fondos crema; la relación con la paleta entregada requiere validar.
 
 ## Público y canales

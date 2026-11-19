@@ -2,12 +2,22 @@
 tipo: decisiones
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-11-11
+actualizado: 2026-11-19
 tags: [decisiones]
 fuentes: ["../AGENTS.md", "[[documentos-y-activos]]", "Propietario, respuestas en conversación 2026-11-06"]
 ---
 
 # Decisiones
+
+## 2026-11-12 — Tomar el azul de la paleta para títulos
+- **Confirmado por el propietario:** usar la imagen `Docs/.../PALETA DE COLORES.jpeg` como referencia de color para las letras.
+- **Decisión de implementación:** aplicar a los títulos y elementos tipográficos `font-heading` un azul oscuro derivado del primer azul intenso de la paleta (`#0b5fb7`), ajustado para mantener legibilidad sobre fondos claros. Los textos explícitamente blancos sobre bloques oscuros conservan su color.
+- **Fuente:** propietario, conversación 2026-11-12; [[documentos-y-activos]].
+
+## 2026-11-12 — Mostrar cuatro especialidades en ambas sedes
+- **Confirmado por el propietario:** psiquiatría, fisiatría, neuropediatría y neuropsicología están disponibles en Valledupar y Atánquez.
+- **Decisión de implementación:** incluir las cuatro en el catálogo de servicios seleccionable y el agendamiento para ambas sedes; no añadir profesionales ni credenciales.
+- **Fuente:** propietario, conversación 2026-11-12; [[empresa]].
 
 ## 2026-10-29 — Conservar el proyecto y el ZIP originales
 - **Confirmado:** mantener el código extraído que ya existe en la raíz, junto con el ZIP original bajo `Docs/`; las entradas del ZIP corresponden a la aplicación presente.
@@ -50,3 +60,18 @@ fuentes: ["../AGENTS.md", "[[documentos-y-activos]]", "Propietario, respuestas e
 - **Confirmado por el propietario:** `Docs/.../FACHADA SEDE ATANQUE.jpeg` es la fachada de Atánquez y debe usarse para esa sede.
 - **Decisión de implementación:** preservar el original y usar una copia técnica en `public/images/sede-atanquez-fachada.jpeg`; la portada y las vistas por sede muestran la imagen correspondiente a la selección activa.
 - **Fuente:** propietario, respuesta en conversación 2026-11-11; [[documentos-y-activos]].
+## 2026-11-19 — Incorporar misión, visión y perfiles confirmados de Atánquez
+- **Confirmado por el propietario:** se deben incorporar al sitio los originales `mision y vision .jpeg`, `PROFESIONAL - SEDE ATANQUEZ.docx` y `profesionales sede valledupar.docx`; las fotos enviadas están autorizadas por cada profesional.
+- **Decisión de implementación:** transcribir misión y visión al inicio; omitir de la visión el año 2026 que figura en la placa. Reemplazar perfiles no respaldados por los datos y retratos de los directorios de ambas sedes; no publicar credenciales ni horarios ausentes en la fuente.
+- **Interpretación del documento:** el nombre “Mayra Silva Venecia” precede al cargo y la biografía de fisioterapia; ambos se incorporaron a su perfil siguiendo ese orden.
+- **Fuentes:** originales del propietario en `Docs/`; [[empresa]], [[documentos-y-activos]], [[plan-de-mejora]].
+
+## 2026-11-19 — Mostrar completos los retratos del equipo
+- **Confirmado por el propietario:** las imágenes de los perfiles deben verse completas.
+- **Decisión de implementación:** usar `object-contain` en las fotos de profesionales y personal administrativo para conservar todo el encuadre, sin recortes.
+- **Fuente:** propietario, conversación 2026-11-19; [[plan-de-mejora]].
+
+## 2026-11-19 — Aplicar la identidad del logo en ambas sedes
+- **Confirmado por el propietario:** integrar LOGO.jpeg y combinar en la página los colores de la marca.
+- **Decisión de implementación:** conservar el original en Docs y usar una copia local compartida en encabezado y pie. Aplicar azul como base, superficies azul claro, naranja de acento y una franja arcoíris fina para reflejar el logo sin saturar el contenido.
+- **Fuente:** propietario, conversación 2026-11-19; [[documentos-y-activos]].

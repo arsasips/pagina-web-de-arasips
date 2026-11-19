@@ -2,7 +2,7 @@
 tipo: catálogo
 estado: vigente
 creado: 2026-10-29
-actualizado: 2026-11-11
+actualizado: 2026-11-19
 tags: [fuentes, activos, Docs]
 fuentes: ["../Docs/ (originales empresariales; ignorados por Git)", "../src/data/mockData.ts"]
 ---
@@ -11,14 +11,21 @@ fuentes: ["../Docs/ (originales empresariales; ignorados por Git)", "../src/data
 
 `Docs/` es la fuente de originales. No se modifican ni se versionan en Git. El paquete recibido está bajo `Docs/Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/`. Se conserva allí el ZIP `CARPETA NUEVO/arsas-ips---rehabilitación-y-educación-especial.zip`; no se extrae encima del proyecto existente. Sus entradas listadas coinciden con los archivos fuente principales del proyecto actual. No se encontraron copias de trabajo organizadas ni se crearon duplicados.
 
-Se generó y revisó visualmente una hoja de contacto con las 17 imágenes JPEG/PNG de `Docs/`. En una revisión ampliada de los volantes, fachadas y medios incrustados en el DOCX se pudieron leer datos que la hoja de contacto no mostraba: servicios, números y correos de contacto, dirección en la fachada de Valledupar y una credencial profesional. Los datos de la credencial no se repiten aquí porque su publicación requiere autorización. Los volantes y la fachada de Atánquez muestran servicios, pero no fechan su vigencia; los permisos de imágenes de personas siguen por confirmar. Los 23 videos no se reprodujeron. El DOCX tiene cuatro imágenes incrustadas y ningún texto editable extraíble; no se pudo renderizar el documento completo porque LibreOffice no está instalado. Los archivos bajo `sesion 2` parecen ejemplos/referencias, no activos aprobados.
+Se generó y revisó visualmente una hoja de contacto con las 17 imágenes JPEG/PNG de `Docs/`. En una revisión ampliada de los volantes, fachadas y medios incrustados en DOCX se pudieron leer servicios, números y correos de contacto, dirección en la fachada de Valledupar y una credencial profesional. Los datos de la credencial no se repiten aquí porque su publicación requiere autorización. El propietario confirmó la autorización de los retratos de los dos directorios profesionales incorporados a la web; las autorizaciones de fotos de actividades/personas ajenas a esos directorios siguen por confirmar. Los 23 videos no se reprodujeron. Los archivos bajo `sesion 2` parecen ejemplos/referencias, no activos aprobados.
 
 ## Identidad visual
 | Ruta relativa a `Docs/` | Categoría / descripción | Uso y pendientes |
 |---|---|---|
-| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/LOGO.jpeg` | Identidad visual; imagen revisada. Logotipo infantil multicolor con texto ARSAS. | Posible identidad institucional; revisar calidad/tamaño antes de publicar. |
-| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/PALETA DE COLORES.jpeg` | Identidad visual; imagen revisada, muestra gama de azules. | Contrastar con colores actuales azul/naranja/crema y confirmar paleta oficial. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/LOGO.jpeg` | Identidad visual; imagen revisada de 509 × 382 px, azul con arcoíris multicolor. | Seleccionado por el propietario para el sitio. Copia técnica intacta en `public/images/arsas-logo.jpeg`, compartida por encabezado y pie en ambas sedes. El original permanece en Docs. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/PALETA DE COLORES.jpeg` | Identidad visual; imagen revisada, muestra una gama de azules desde intenso hasta celeste. | Por solicitud del propietario (2026-11-12), el azul oscuro inspira los textos destacados. Desde 2026-11-19 la paleta compartida usa azul como base, superficies azul claro, naranja de acento y una línea fina con los tonos del arcoíris del logo. Original conservado en Docs. |
 | `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/HOJA MEMBRETEADA ..docx` | Membrete; contiene logo, banda gráfica y una imagen de credencial de una profesional con nombre, título y tarjeta profesional visibles. | El perfil aparece en la fuente, pero su vigencia y autorización para publicar nombre/credencial aún deben confirmarse. El documento completo no se pudo renderizar. |
+
+## Contenido institucional y equipo
+| Ruta relativa a `Docs/` | Categoría / descripción comprobable | Uso / revisión pendiente |
+|---|---|---|
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/mision y vision .jpeg` | Foto de placas institucionales con misión, visión, políticas y derechos/deberes de usuarios. | Misión y visión transcritas en [[empresa]] y añadidas al inicio. La visión original menciona 2026; la versión visible omite ese año para que el texto no quede vencido. Las otras placas no se incorporaron. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/PROFESIONAL - SEDE ATANQUEZ.docx` | Directorio de profesionales y personal administrativo de Atánquez con texto y cinco retratos incrustados. | Por solicitud del propietario (2026-11-19), se añadieron al sitio los nombres, cargos, biografías disponibles y retratos; autorización de fotos confirmada por el propietario. La biografía de fisioterapia se vinculó con el nombre Mayra Silva Venecia según el orden del documento. Original intacto. |
+| `Soportes de contenido digital ARSAS IPS-20261029T193507Z-1-001/Soportes de contenido digital ARSAS IPS/profesionales sede valledupar.docx` | Directorio de tres profesionales y una persona del área administrativa, con cuatro retratos incrustados. | Por solicitud del propietario (2026-11-19), se añadieron al directorio los nombres, cargos y retratos de las cuatro personas; autorización de las fotos confirmada por el propietario. No incluye biografías clínicas. Original intacto. |
 
 ## Fotos, referencias y archivos multimedia
 

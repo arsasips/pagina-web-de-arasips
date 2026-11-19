@@ -7,6 +7,21 @@ interface SpecialistsViewProps {
   selectedSede: SedeName;
 }
 
+const ADMIN_TEAM: Array<{ name: string; role: string; sede: SedeName; image: string }> = [
+  {
+    name: 'Arianna Yisel Córdoba Mindiola',
+    role: 'Admisiones y facturación',
+    sede: 'Atánquez',
+    image: '/images/profesionales/arianna-cordoba-mindiola.jpeg',
+  },
+  {
+    name: 'Lexibel León',
+    role: 'Técnico laboral por competencias en auxiliar administrativo',
+    sede: 'Valledupar',
+    image: '/images/profesionales/lexibel-leon.jpeg',
+  },
+];
+
 export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
   onBookWithSpecialist,
   selectedSede,
@@ -20,7 +35,7 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
     const matchesQuery =
       s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       s.specialty.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      s.focusAreas.some((fa) => fa.toLowerCase().includes(searchQuery.toLowerCase()));
+      (s.focusAreas ?? []).some((fa) => fa.toLowerCase().includes(searchQuery.toLowerCase()));
     return matchesSede && matchesQuery;
   });
 
@@ -28,15 +43,14 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
     <div className="max-w-[1240px] mx-auto px-4 md:px-8 py-12 flex flex-col gap-10">
       {/* Title & Introduction */}
       <div className="flex flex-col gap-3 text-center max-w-2xl mx-auto">
-        <span className="text-xs uppercase tracking-widest text-[#004786] font-bold">
-          Equipo Médico y Terapéutico
+        <span className="text-xs uppercase tracking-widest text-[#004090] font-bold">
+          Equipo de {selectedSedeFilter === 'todos' ? 'Valledupar y Atánquez' : selectedSedeFilter}
         </span>
         <h1 className="font-heading text-3xl md:text-5xl font-bold text-[#1c1c17]">
-          Nuestros Especialistas
+          Profesionales y equipo
         </h1>
         <p className="text-sm md:text-base text-[#424751] leading-relaxed">
-          Profesionales certificados con amplia trayectoria en neurorehabilitación,
-          fonoaudiología, pedagogía inclusiva y salud mental en Valledupar y Atánquez.
+          Conoce a parte del equipo de cada sede, según la información institucional recibida.
         </p>
 
         {/* Filter Bar */}
@@ -50,16 +64,16 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
               placeholder="Buscar por nombre o especialidad..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-white border border-[#1c1c17]/15 rounded-full pl-10 pr-4 py-2 text-xs text-[#1c1c17] focus:outline-none focus:border-[#004786]"
+              className="w-full bg-white border border-[#1c1c17]/15 rounded-full pl-10 pr-4 py-2 text-xs text-[#1c1c17] focus:outline-none focus:border-[#004090]"
             />
           </div>
 
-          <div className="flex items-center gap-1.5 p-1 bg-[#ebe8e0] rounded-full">
+          <div className="flex items-center gap-1.5 p-1 bg-[#E1EDF8] rounded-full">
             <button
               onClick={() => setSelectedSedeFilter('todos')}
               className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all ${
                 selectedSedeFilter === 'todos'
-                  ? 'bg-white text-[#004786] shadow-sm'
+                  ? 'bg-white text-[#004090] shadow-sm'
                   : 'text-[#424751] hover:text-[#1c1c17]'
               }`}
             >
@@ -69,7 +83,7 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
               onClick={() => setSelectedSedeFilter('Valledupar')}
               className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all ${
                 selectedSedeFilter === 'Valledupar'
-                  ? 'bg-[#004786] text-white shadow-sm'
+                  ? 'bg-[#004090] text-white shadow-sm'
                   : 'text-[#424751] hover:text-[#1c1c17]'
               }`}
             >
@@ -79,7 +93,7 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
               onClick={() => setSelectedSedeFilter('Atánquez')}
               className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all ${
                 selectedSedeFilter === 'Atánquez'
-                  ? 'bg-[#004786] text-white shadow-sm'
+                  ? 'bg-[#004090] text-white shadow-sm'
                   : 'text-[#424751] hover:text-[#1c1c17]'
               }`}
             >
@@ -91,27 +105,35 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
 
       {/* Grid of Specialists */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filtered.length === 0 && (
+          <p className="md:col-span-2 lg:col-span-3 text-center text-sm text-[#424751] bg-white rounded-2xl p-8">
+            La información del equipo de Valledupar aún no se ha incluido en este directorio.
+          </p>
+        )}
         {filtered.map((specialist) => (
           <div
             key={specialist.id}
             className="rounded-3xl bg-white border border-[#1c1c17]/10 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
           >
             <div>
-              {/* Specialist Photo & Badge */}
-              <div className="relative h-60 w-full overflow-hidden bg-[#ebe8e0]">
-                <img
-                  src={specialist.image}
-                  alt={specialist.name}
-                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold text-[#004786] shadow-sm">
-                  {specialist.experienceYears} años exp.
-                </div>
+              {/* Retrato incluido en el original institucional y autorizado por el propietario. */}
+              <div className="relative h-60 w-full overflow-hidden bg-[#E1EDF8]">
+                {specialist.image ? (
+                  <img
+                    src={specialist.image}
+                    alt={`Retrato de ${specialist.name}`}
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-[#004090]">
+                    <span className="material-symbols-outlined text-6xl" aria-hidden="true">person</span>
+                  </div>
+                )}
                 <div className="absolute bottom-3 left-3 flex gap-1.5">
                   {specialist.sedes.map((s) => (
                     <span
                       key={s}
-                      className="bg-[#004786]/90 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full backdrop-blur-sm"
+                      className="bg-[#004090]/90 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full backdrop-blur-sm"
                     >
                       {s}
                     </span>
@@ -122,40 +144,41 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
               {/* Bio & Details */}
               <div className="p-6 flex flex-col gap-3">
                 <div>
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#004786]">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#004090]">
                     {specialist.specialty}
                   </span>
                   <h3 className="font-heading font-bold text-xl text-[#1c1c17]">
                     {specialist.name}
                   </h3>
-                  <p className="text-xs text-[#727782]">{specialist.role}</p>
-                  <p className="text-[10px] text-[#727782] font-mono mt-0.5">
-                    ReTHUS: {specialist.rethus}
-                  </p>
+                  {specialist.role && <p className="text-xs text-[#727782]">{specialist.role}</p>}
                 </div>
 
-                <p className="text-xs text-[#424751] leading-relaxed">
-                  {specialist.bio}
-                </p>
+                {specialist.bio && (
+                  <p className="text-xs text-[#424751] leading-relaxed">{specialist.bio}</p>
+                )}
 
                 {/* Focus areas */}
-                <div className="pt-2">
-                  <p className="text-[11px] font-bold text-[#1c1c17] mb-1.5">Áreas de enfoque:</p>
-                  <div className="flex flex-wrap gap-1.5">
+                {specialist.focusAreas && specialist.focusAreas.length > 0 && (
+                  <div className="pt-2">
+                    <p className="text-[11px] font-bold text-[#1c1c17] mb-1.5">Áreas de enfoque:</p>
+                    <div className="flex flex-wrap gap-1.5">
                     {specialist.focusAreas.map((area, idx) => (
                       <span
                         key={idx}
-                        className="bg-[#f7f3eb] text-[#424751] text-[10px] font-semibold px-2 py-0.5 rounded-md"
+                        className="bg-[#F2F8FE] text-[#424751] text-[10px] font-semibold px-2 py-0.5 rounded-md"
                       >
                         {area}
                       </span>
                     ))}
+                    </div>
                   </div>
-                </div>
+                )}
 
-                <div className="text-[11px] text-[#727782] bg-[#fdf9f1] p-2.5 rounded-xl border border-[#1c1c17]/5 mt-1">
-                  <span className="font-semibold text-[#1c1c17]">Horario:</span> {specialist.schedule}
-                </div>
+                {specialist.schedule && (
+                  <div className="text-[11px] text-[#727782] bg-[#FAFCFF] p-2.5 rounded-xl border border-[#1c1c17]/5 mt-1">
+                    <span className="font-semibold text-[#1c1c17]">Horario:</span> {specialist.schedule}
+                  </div>
+                )}
               </div>
             </div>
 
@@ -163,7 +186,7 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
             <div className="p-6 pt-0 flex gap-2">
               <button
                 onClick={() => onBookWithSpecialist(specialist)}
-                className="flex-1 flex items-center justify-center gap-1.5 bg-[#fc9427] hover:bg-[#e57f15] text-white py-2.5 rounded-full font-bold text-xs shadow-sm transition-all"
+                className="flex-1 flex items-center justify-center gap-1.5 bg-[#B84500] hover:bg-[#943700] text-white py-2.5 rounded-full font-bold text-xs shadow-sm transition-all"
               >
                 <span className="material-symbols-outlined text-[16px]">calendar_month</span>
                 <span>Pedir Cita</span>
@@ -174,13 +197,32 @@ export const SpecialistsView: React.FC<SpecialistsViewProps> = ({
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-[#004786] text-white hover:bg-[#00386b] transition-colors shrink-0"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-[#004090] text-white hover:bg-[#00346B] transition-colors shrink-0"
                 title="Consultar por WhatsApp"
               >
                 <span className="material-symbols-outlined text-[18px]">chat</span>
               </a>
             </div>
           </div>
+        ))}
+        {ADMIN_TEAM.filter((member) => selectedSedeFilter === 'todos' || member.sede === selectedSedeFilter).map((member) => (
+        <article key={`${member.sede}-${member.name}`} className="rounded-3xl bg-white border border-[#1c1c17]/10 overflow-hidden shadow-sm">
+          <div className="h-60 overflow-hidden bg-[#E1EDF8]">
+            <img
+              src={member.image}
+              alt={`Retrato de ${member.name}`}
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="p-6">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[#004090]">Equipo administrativo</span>
+            <h2 className="font-heading font-bold text-xl text-[#1c1c17] mt-1">{member.name}</h2>
+            <p className="text-xs text-[#727782] mt-1">{member.role}</p>
+            <span className="inline-block mt-3 bg-[#004090]/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">
+              {member.sede}
+            </span>
+          </div>
+        </article>
         ))}
       </div>
     </div>

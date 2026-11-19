@@ -13,10 +13,10 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ selectedSede
 
   return (
     <aside className="fixed bottom-6 right-6 z-40 flex items-center gap-2">
-      <button onClick={onChangeSede} className="rounded-full bg-white px-4 py-3 text-xs font-bold text-[#004786] shadow-lg" aria-label={`Cambiar sede, actualmente ${selectedSede}`}>
+      <button onClick={onChangeSede} className="rounded-full bg-white px-4 py-3 text-xs font-bold text-[#004090] shadow-lg" aria-label={`Cambiar sede, actualmente ${selectedSede}`}>
         Sede {selectedSede} · Cambiar
       </button>
-      <a href={`https://wa.me/${sede.whatsappNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" aria-label={`Abrir WhatsApp de la sede ${selectedSede}`} className="pulse-whatsapp flex h-14 w-14 items-center justify-center rounded-full bg-[#fc9427] text-white shadow-xl transition-transform hover:scale-105">
+      <a href={`https://wa.me/${sede.whatsappNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" aria-label={`Abrir WhatsApp de la sede ${selectedSede}`} className="pulse-whatsapp flex h-14 w-14 items-center justify-center rounded-full bg-[#B84500] text-white shadow-xl transition-transform hover:scale-105">
         <span className="material-symbols-outlined text-[28px]">chat</span>
       </a>
     </aside>
